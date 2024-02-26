@@ -19,10 +19,10 @@ d3 = 3;
 % if revolute joint: theta = 0, offset = 0, after offset put the value of theta
 
 H0_1 = Link([0,a1,0,pi/2,0,t1]); 
-H0_1.qlim = pi/180*[-180 180];
+H0_1.qlim = pi/180*[-90 90];
 
 H1_2 = Link([0,0,0,pi/2,0,t2]);
-H1_2.qlim = pi/180*[0 180];
+H1_2.qlim = pi/180*[0 90];
 
 H2_3 = Link([0,0,0,0,1,a2+a3]);
 H2_3.qlim = [0 d3];
