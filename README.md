@@ -1,1 +1,1 @@
-# Robotics2_FK-IK_Group7_SPHERICAL_2024
+# Robotics2_FKandIK_Group7_SPHERICAL_2024
