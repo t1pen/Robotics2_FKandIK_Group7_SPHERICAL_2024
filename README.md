@@ -2,8 +2,8 @@
 
 ## Table of Contents
 - [DH Frames and Parametric Table of Spherical](#-spherical-manipulator-)
-- [SCARA - PRR Variant](#-scara---prr-variant-)
-- [Cartesian Manipulator in Ceiling](#-cartesian-manipulator-in-ceiling-)
+- [Python and MATLAB Code](#-python-and-matlab-code-)
+- [Comparison of Forward Kinematics in MATLAB and Phyton](#-comparison-of-forward-kinematics-in-matlab-and-phyton-)
 - [Group Members:](#group-members)
 <br>
 
