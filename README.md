@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-spherical-manipulator-)
+- [Derivation of Inverse Kinematics using Graphical Method](#-derivation-of-inverse-kinematics-using-graphical-method-)
 - [Comparison of Forward and Inverse Kinematics in MATLAB and Phyton](#-comparison-of-forward-and-inverse-kinematics-in-matlab-and-phyton-)
    - [Trial Table of Forward Kinematics in MATLAB and Python](#-trial-table-of-forward-kinematics-in-matlab-and-python)
    - [Trial Table of Inverse Kinematics in MATLAB and Python](#-trial-table-of-inverse-kinematics-in-matlab-and-python)
@@ -14,6 +15,15 @@
 </p>
 <br>
 <br>
+
+<h1 align="center"> Derivation of Inverse Kinematics using Graphical Method </h1> 
+<p align="center">
+   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/b659b633-7068-412a-b9b0-58626bb0287f alt=Inverse_Kinematics_Graphical_Method_1 width="700"/>
+<br>
+<br>
+
+
+
 
 <h1 align="center"> Comparison of Forward and Inverse Kinematics in MATLAB and Phyton </h1>
 <hr>
