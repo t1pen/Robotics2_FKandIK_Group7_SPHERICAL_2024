@@ -11,7 +11,8 @@
 
 <h1 align="center"> Kinematic Diagram and Parametric Table of Spherical Manipulator </h1> 
 <p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/e465bccfd4229def6201475c47bcb6812df718a8/DH%20Frame%20and%20Parametric%20Table%20of%20Spherical/D-H%20Frame%20%26%20Parametric%20Table.jpg width="700"/>
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/c0c481a4-3d7c-4005-83e1-21bc436ec15e alt=DH_Frame_and_Parametric_Table width="700"/>
+<p align="center">
 </p>
 <br>
 <br>
