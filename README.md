@@ -2,8 +2,7 @@
 
 ## Table of Contents
 - [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-spherical-manipulator-)
-- [Python and MATLAB Code](#-python-and-matlab-code-)
-- [Comparison of Forward Kinematics in MATLAB and Phyton](#-comparison-of-forward-kinematics-in-matlab-and-phyton-)
+- [Comparison of Forward and Inverse Kinematics in MATLAB and Phyton](#-comparison-of-forward-and-inverse-kinematics-in-matlab-and-phyton-)
 - [Group Members:](#group-members)
 <br>
 
@@ -14,14 +13,22 @@
 <br>
 <br>
 
-<h1 align="center"> Python and MATLAB Code </h1> 
+<h1 align="center"> Comparison of Forward and Inverse Kinematics in MATLAB and Phyton </h1>
+<hr>
+
+<h1 align="center"> Trial Table of Forard Kinematics in MATLAB and Python </h1> 
 <p align="center">
   <img src=(link) alt=(image-name) width="700"/>
 </p>
 <br>
 <br>
 
-
+<h1 align="center"> Trial Table of Inverse Kinematics in MATLAB and Python </h1> 
+<p align="center">
+  <img src=(link) alt=(image-name) width="700"/>
+</p>
+<br>
+<br>
 
 
 ### Group Members:
