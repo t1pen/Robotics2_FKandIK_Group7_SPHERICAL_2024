@@ -18,7 +18,7 @@
 <h1 align="center"> Comparison of Forward and Inverse Kinematics in MATLAB and Phyton </h1>
 <hr>
 
-<h1 align="center"> Trial Table of Forard Kinematics in MATLAB and Python </h1> 
+<h1 align="center"> Trial Table of Forward Kinematics in MATLAB and Python </h1> 
 <p align="center">
   <img src=(link) alt=(image-name) width="700"/>
 </p>
