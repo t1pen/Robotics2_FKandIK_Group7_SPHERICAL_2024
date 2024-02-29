@@ -20,13 +20,9 @@
 <p align="center">
    <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/b659b633-7068-412a-b9b0-58626bb0287f alt=Inverse_Kinematics_Graphical_Method_1 width="700"/>
 <p align="center">
-   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/b659b633-7068-412a-b9b0-58626bb0287f alt=Inverse_Kinematics_Graphical_Method_1 width="700"/>
+   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/d8f43e6d-8a61-4257-808e-a8dff408b0ef alt=Inverse_Kinematics_Graphical_Method_2 width="700"/>
 <br>
 <br>
-![Inverse_Kinematics_Graphical_Method_2](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/d8f43e6d-8a61-4257-808e-a8dff408b0ef)
-
-
-
 
 <h1 align="center"> Comparison of Forward and Inverse Kinematics in MATLAB and Phyton </h1>
 <hr>
