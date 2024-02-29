@@ -11,7 +11,7 @@ a3 = 2;
 %% Joint Variables
 
 t1 = 0;
-t2 = pi/2;
+t2 = pi/180*(90);
 d3 = 3;
 
 %% D-H Parameters: [theta, d, r, alpha, offset]
