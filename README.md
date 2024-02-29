@@ -27,7 +27,7 @@
 
 <h1 align="center"> Trial Table of Inverse Kinematics in MATLAB and Python </h1> 
 <p align="center">
-  <img src=(link) alt=(image-name) width="700"/>
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/440b5c7742bceab7f9bf815b060b93355776fd29/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Inverse%20Kinamatics.png alt=(image-name) width="700"/>
 </p>
 <br>
 <br>
