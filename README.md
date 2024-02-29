@@ -35,7 +35,7 @@
 
 ### Group Members:
 - Alojado, Stephen Gabriel S.
-- Apostol, Jan Benedict
+- Apostol, Jan Benedict D.
 - Cardenas, Sofia Bianca J.
-- Catapang, Jamil Darrius
+- Catapang, Jamil Darrius S.
 - Umali, Ariane Mae D.
