@@ -1,7 +1,7 @@
 # Robotics2_FKandIK_Group7_SPHERICAL_2024
 
 ## Table of Contents
-- [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-spherical-manipulator-)
+- [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-kinematic-diagram-and-parametric-table-of-spherical-manipulator-)
 - [Derivation of Inverse Kinematics using Graphical Method](#-derivation-of-inverse-kinematics-using-graphical-method-)
 - [Comparison of Forward and Inverse Kinematics in MATLAB and Phyton](#-comparison-of-forward-and-inverse-kinematics-in-matlab-and-phyton-)
    - [Trial Table of Forward Kinematics in MATLAB and Python](#-trial-table-of-forward-kinematics-in-matlab-and-python)
