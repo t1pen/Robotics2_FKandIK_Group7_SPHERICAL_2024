@@ -20,14 +20,14 @@
 
 <h1 align="center"> Trial Table of Forward Kinematics in MATLAB and Python </h1> 
 <p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/0d4a1af26e3a6964fa47395ed9f41d56eaa53fae/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Forward%20Kinematics.png alt=trial-table-for-forward-kinematics-in-matlab-and-python width="800"/>
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/0d4a1af26e3a6964fa47395ed9f41d56eaa53fae/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Forward%20Kinematics.png alt=trial-table-of-forward-kinematics-in-matlab-and-python width="800"/>
 </p>
 <br>
 <br>
 
 <h1 align="center"> Trial Table of Inverse Kinematics in MATLAB and Python </h1> 
 <p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/440b5c7742bceab7f9bf815b060b93355776fd29/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Inverse%20Kinamatics.png alt=(image-name) width="800"/>
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/440b5c7742bceab7f9bf815b060b93355776fd29/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Inverse%20Kinamatics.png alt=trial-table-of-inverse-kinematics-in-matlab-and-python width="900"/>
 </p>
 <br>
 <br>
