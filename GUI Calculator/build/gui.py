@@ -6,7 +6,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\3rd Year 2nd Sem\Rob2\Final Project\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\GitHub\Robotics2_FK-IK_Group7_SPHERICAL_2024\GUI Calculator\build\assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -17,6 +17,9 @@ window = Tk()
 
 window.geometry("900x600")
 window.configure(bg = "#FFFFFF")
+window.title("Spherical Manipulator Calculator")
+img = PhotoImage(file='icon.png')
+window.tk.call('wm', 'iconphoto', window._w, img)
 
 def reset():
     a1_E.delete(0, END)
