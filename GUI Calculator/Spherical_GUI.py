@@ -1,12 +1,13 @@
 from pathlib import Path
-
 from tkinter import *
-# Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+import roboticstoolbox as rtb
+import numpy as np 
+from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\GitHub\Robotics2_FK-IK_Group7_SPHERICAL_2024\GUI Calculator\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\3rd Year 2nd Sem\Rob2\Final Project\build\assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -17,9 +18,6 @@ window = Tk()
 
 window.geometry("900x600")
 window.configure(bg = "#FFFFFF")
-window.title("Spherical Manipulator Calculator")
-img = PhotoImage(file='icon.png')
-window.tk.call('wm', 'iconphoto', window._w, img)
 
 def reset():
     a1_E.delete(0, END)
@@ -34,6 +32,93 @@ def reset():
     y_E.delete(0, END)
     z_E.delete(0, END)
 
+def f_k():
+    a1 = float(a1_E.get())
+    a2 = float(a2_E.get())
+    a3 = float(a3_E.get())
+
+    #link conversion to meters
+    def cm_to_meter(a):
+        m = 100 # 1 meter  = 100 cm
+        return a/m
+
+    a1 = cm_to_meter(a1)
+    a2 = cm_to_meter(a2)
+    a3 = cm_to_meter(a3)
+
+    t1 = float(t1_E.get())
+    t2 = float(t2_E.get())
+    d3 = float(d3_E.get())
+
+    t1 = (t1/180.0)*np.pi
+    t2 = (t2/180.0)*np.pi
+    d3 = cm_to_meter(d3)
+    
+    # Parametric Table
+
+    PT = [[(0.0/180)*np.pi+t1, (90.0/180)*np.pi, 0, a1],
+          [(90.0/180)*np.pi+t2, (90.0/180)*np.pi, 0, 0],
+          [(0.0/180)*np.pi, (0.0/180)*np.pi, 0, a2+a3+d3]]
+
+    # Homegeneous Transformation Matrix Formula
+
+    i = 0
+    H0_1 = [[np.cos(PT[i][0]), -np.sin(PT[i][0])*np.cos(PT[i][1]), np.sin(PT[i][0])*np.sin(PT[i][1]), PT[i][2]*np.cos(PT[i][0])],
+            [np.sin(PT[i][0]), np.cos(PT[i][0])*np.cos(PT[i][1]), -np.cos(PT[i][0])*np.sin(PT[i][1]), PT[i][2]*np.sin(PT[i][0])],
+            [0, np.sin(PT[i][1]), np.cos(PT[i][1]), PT[i][3]],
+            [0, 0, 0, 1]]       
+
+    i = 1
+    H1_2 = [[np.cos(PT[i][0]), -np.sin(PT[i][0])*np.cos(PT[i][1]), np.sin(PT[i][0])*np.sin(PT[i][1]), PT[i][2]*np.cos(PT[i][0])],
+            [np.sin(PT[i][0]), np.cos(PT[i][0])*np.cos(PT[i][1]), -np.cos(PT[i][0])*np.sin(PT[i][1]), PT[i][2]*np.sin(PT[i][0])],
+            [0, np.sin(PT[i][1]), np.cos(PT[i][1]), PT[i][3]],
+            [0, 0, 0, 1]] 
+
+    i = 2
+    H2_3 = [[np.cos(PT[i][0]), -np.sin(PT[i][0])*np.cos(PT[i][1]), np.sin(PT[i][0])*np.sin(PT[i][1]), PT[i][2]*np.cos(PT[i][0])],
+            [np.sin(PT[i][0]), np.cos(PT[i][0])*np.cos(PT[i][1]), -np.cos(PT[i][0])*np.sin(PT[i][1]), PT[i][2]*np.sin(PT[i][0])],
+            [0, np.sin(PT[i][1]), np.cos(PT[i][1]), PT[i][3]],
+            [0, 0, 0, 1]]
+
+
+    #Multiply Matrices
+
+    H0_2 = np.dot(H0_1, H1_2)
+    H0_3 = np.dot(H0_2, H2_3)
+
+    X0_3 = H0_3[0,3]
+    x_E.delete(0,END)
+    x_E.insert(0,np.around(X0_3*100,3))
+
+    Y0_3 = H0_3[1,3]
+    y_E.delete(0,END)
+    y_E.insert(0,np.around(Y0_3*100,3))
+
+    Z0_3 = H0_3[2,3]
+    z_E.delete(0,END)
+    z_E.insert(0,np.around(Z0_3*100,3))
+    
+    #Create links
+    #robot_variable = DHRobot([RevoluteDH(d,r,alpha,offset=theta,qlim)])
+    #robot_variable = DHRobot([PrismaticDH(d=0,r,alpha,offset=d,qlim)])
+    Spherical = DHRobot([
+        RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
+        RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[0,np.pi/2]),
+        PrismaticDH(0,0,(0.0/180)*np.pi,a2+a3,qlim=[0,d3])
+    ], name="Spherical")
+
+    q1 = np.array([t1,t2,d3])
+
+        # plot scale
+    x1 = -0.8
+    x2 = 0.8
+    y1 = -0.8
+    y2 = 0.8
+    z1 = 0
+    z2 = 0.8
+
+        # Plot command
+    Spherical.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
 
 canvas = Canvas(
     window,
@@ -270,23 +355,23 @@ canvas.create_text(
     font=("Calibri", 16 * -1)
 )
 
-entry_image_1 = PhotoImage(
-    file=relative_to_assets("entry_1.png"))
-entry_bg_1 = canvas.create_image(
+entry_image_3 = PhotoImage(
+    file=relative_to_assets("entry_3.png"))
+entry_bg_3 = canvas.create_image(
     284.5,
-    274.5,
-    image=entry_image_1
+    194.5,
+    image=entry_image_3
 )
-a3_E = Entry(
+a1_E = Entry(
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
     fg="#000716",
     highlightthickness=0
 )
-a3_E.place(
+a1_E.place(
     x=218.0,
-    y=260.0,
+    y=182.0,
     width=133.0,
     height=29.0
 )
@@ -312,23 +397,23 @@ a2_E.place(
     height=29.0
 )
 
-entry_image_3 = PhotoImage(
-    file=relative_to_assets("entry_3.png"))
-entry_bg_3 = canvas.create_image(
+entry_image_1 = PhotoImage(
+    file=relative_to_assets("entry_1.png"))
+entry_bg_1 = canvas.create_image(
     284.5,
-    194.5,
-    image=entry_image_3
+    274.5,
+    image=entry_image_1
 )
-a1_E = Entry(
+a3_E = Entry(
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
     fg="#000716",
     highlightthickness=0
 )
-a1_E.place(
+a3_E.place(
     x=218.0,
-    y=182.0,
+    y=260.0,
     width=133.0,
     height=29.0
 )
@@ -465,7 +550,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_1 clicked"),
+    command=f_k,
     relief="flat"
 )
 button_1.place(
