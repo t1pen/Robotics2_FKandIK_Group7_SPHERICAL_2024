@@ -7,7 +7,7 @@ from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\3rd Year 2nd Sem\Rob2\Final Project\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\GitHub\Robotics2_FK-IK_Group7_SPHERICAL_2024\GUI Calculator\build\assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -113,14 +113,61 @@ def f_k():
     q1 = np.array([t1,t2,d3])
 
         # plot scale
-    x1 = -0.8
-    x2 = 0.8
-    y1 = -0.8
-    y2 = 0.8
+    x1 = -0.5
+    x2 = 0.5
+    y1 = -0.5
+    y2 = 0.5
     z1 = 0
-    z2 = 0.8
+    z2 = 0.5
 
         # Plot command
+    Spherical.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
+
+def i_k():
+    a1 = float(a1_E.get())
+    a2 = float(a2_E.get())
+    a3 = float(a3_E.get())
+
+    # Position Vector
+
+    x_pos = float(x_E.get())
+    y_pos = float(y_E.get())
+    z_pos = float(z_E.get())
+
+    ## Formula List
+    t1_ik = np.arctan(y_pos/x_pos)*180/np.pi # Formula 1
+    r1 = np.sqrt((x_pos**2) + (y_pos**2)) # Formula 2
+    r2 = z_pos - a1 # Formula 3 
+    t2_ik = np.arctan(r2/r1)*180/np.pi # Formula 4
+    d3_ik = np.sqrt((r1**2) + (r2**2)) - a2 - a3 # Formula 5
+
+    t1_E.delete(0,END)
+    t1_E.insert(0,np.around(t1_ik,3))
+
+    t2_E.delete(0,END)
+    t2_E.insert(0,np.around(t2_ik*180/np.pi,3))
+
+    d3_E.delete(0,END)
+    d3_E.insert(0,np.around(d3_ik*180/np.pi,3))
+
+    Spherical = DHRobot([
+        RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
+        RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[0,np.pi/2]),
+        PrismaticDH(0,0,(0.0/180)*np.pi,a2+a3,qlim=[0,d3_ik])
+    ], name="Spherical")
+
+    #plot joints
+    q1 = np.array([t1_ik/100,t2_ik,d3_ik])
+
+    #plot scale
+    x1 = -0.5
+    x2 = 0.5
+    y1 = -0.5
+    y2 = 0.5
+    z1 = 0.0
+    z2 = 0.5     
+
+    # Plot commands
     Spherical.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
 
 canvas = Canvas(
@@ -569,7 +616,7 @@ button_2 = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
+    command=i_k,
     relief="flat"
 )
 button_2.place(
