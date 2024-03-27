@@ -1,17 +1,27 @@
 # Robotics2_FKandIK_Group7_SPHERICAL_2024
 
 ## Table of Contents
-- [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-spherical-manipulator-)
+- [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-kinematic-diagram-and-parametric-table-of-spherical-manipulator-)
+- [Derivation of Inverse Kinematics using Graphical Method](#-derivation-of-inverse-kinematics-using-graphical-method-)
 - [Comparison of Forward and Inverse Kinematics in MATLAB and Phyton](#-comparison-of-forward-and-inverse-kinematics-in-matlab-and-phyton-)
-   - [Trial Table of Forward Kinematics in MATLAB and Python](#-trial-table-of-forward-kinematics-in-matlab-and-python)
-   - [Trial Table of Inverse Kinematics in MATLAB and Python](#-trial-table-of-inverse-kinematics-in-matlab-and-python)
+   - [Trial Table of Forward Kinematics in MATLAB and Python](#-trial-table-of-forward-kinematics-in-matlab-and-python-)
+   - [Trial Table of Inverse Kinematics in MATLAB and Python](#-trial-table-of-inverse-kinematics-in-matlab-and-python-)
 - [Group Members](#group-members)
 <br>
 
 <h1 align="center"> Kinematic Diagram and Parametric Table of Spherical Manipulator </h1> 
 <p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/DH%20Frame%20and%20Parametric%20Table%20of%20Spherical/DH%20Frame%20&%20Parametric%20Table.jpg?raw=true width="700"/>
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/c0c481a4-3d7c-4005-83e1-21bc436ec15e alt=DH_Frame_and_Parametric_Table width="700"/>
+<p align="center">
 </p>
+<br>
+<br>
+
+<h1 align="center"> Derivation of Inverse Kinematics using Graphical Method </h1> 
+<p align="center">
+   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/b659b633-7068-412a-b9b0-58626bb0287f alt=Inverse_Kinematics_Graphical_Method_1 width="700"/>
+<p align="center">
+   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/d8f43e6d-8a61-4257-808e-a8dff408b0ef alt=Inverse_Kinematics_Graphical_Method_2 width="700"/>
 <br>
 <br>
 
