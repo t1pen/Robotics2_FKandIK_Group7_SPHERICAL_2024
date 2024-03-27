@@ -18,6 +18,9 @@ window = Tk()
 
 window.geometry("900x600")
 window.configure(bg = "#FFFFFF")
+window.title("Spherical Manipulator Calculator")
+img = PhotoImage(file='icon.png')
+window.tk.call('wm', 'iconphoto', window._w, img)
 
 def reset():
     a1_E.delete(0, END)
