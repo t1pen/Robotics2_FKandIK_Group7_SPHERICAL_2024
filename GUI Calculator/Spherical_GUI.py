@@ -1,6 +1,6 @@
 from pathlib import Path
 from tkinter import *
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, messagebox
 import roboticstoolbox as rtb
 import numpy as np 
 from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
@@ -22,20 +22,25 @@ window.title("Spherical Manipulator Calculator")
 img = PhotoImage(file='icon.png')
 window.tk.call('wm', 'iconphoto', window._w, img)
 
-def reset():
-    a1_E.delete(0, END)
-    a2_E.delete(0, END)
-    a3_E.delete(0, END)
 
-    t1_E.delete(0, END)
-    t2_E.delete(0, END)
-    d3_E.delete(0, END)
-    
-    x_E.delete(0, END)
-    y_E.delete(0, END)
-    z_E.delete(0, END)
+def reset():
+    for entry in [a1_E, a2_E, a3_E, t1_E, t2_E, d3_E, x_E, y_E, z_E]:
+        entry.delete(0, END)
+
+def validate_float(entry):
+    try:
+        float(entry.get())
+        return True
+    except ValueError:
+        messagebox.showerror("Invalid Input", "Please enter a valid input.")
+        entry.focus_set()
+        return False
 
 def f_k():
+    entries = [a1_E, a2_E, a3_E, t1_E, t2_E, d3_E]
+    if all(validate_float(entry) for entry in entries):
+        a1, a2, a3, t1, t2, d3 = [float(entry.get()) for entry in entries]
+
     a1 = float(a1_E.get())
     a2 = float(a2_E.get())
     a3 = float(a3_E.get())
@@ -124,15 +129,27 @@ def f_k():
     Spherical.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
 
 def i_k():
+    entries = [x_E, y_E, z_E]
+    if all(validate_float(entry) for entry in entries):
+        x, y, z = [float(entry.get()) for entry in entries]
+
     a1 = float(a1_E.get())
     a2 = float(a2_E.get())
     a3 = float(a3_E.get())
+
+    try:
+            t1_ik = np.arctan(y / x) * 180 / np.pi
+    except ZeroDivisionError:
+        messagebox.showerror("Error", "Zero division error detected.")
+        return
 
     # Position Vector
 
     x_pos = float(x_E.get())
     y_pos = float(y_E.get())
     z_pos = float(z_E.get())
+
+  
 
     ## Formula List
     t1_ik = np.arctan(y_pos/x_pos)*180/np.pi # Formula 1
