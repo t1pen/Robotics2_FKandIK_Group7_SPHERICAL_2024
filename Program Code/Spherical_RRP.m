@@ -4,15 +4,15 @@ syms a1 a2 a3 a4 t1 t2 d3
 
 %% Link Lengths
 
-a1 = 5;
-a2 = 2;
-a3 = 2;
+a1 = 500;
+a2 = 200;
+a3 = 200;
 
 %% Joint Variables
 
 t1 = 0;
 t2 = pi/180*(90);
-d3 = 3;
+d3 = 300;
 
 %% D-H Parameters: [theta, d, r, alpha, offset]
 % if prismatic joint: theta = theta, d = 0, offset = 1, after offset put the value of d
@@ -30,5 +30,5 @@ H2_3.qlim = [0 d3];
 %% Build Mechanical Manipulator
 
 Spherical = SerialLink([H0_1 H1_2 H2_3], 'name', 'Spherical')
-Spherical.plot([0 0 0], 'workspace', [-8 8 -8 8 -1 13])
+Spherical.plot([0 0 0], 'workspace', [-800 800 -800 800 -100 1300])
 Spherical.teach
