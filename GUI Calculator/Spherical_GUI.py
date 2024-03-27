@@ -145,10 +145,10 @@ def i_k():
     t1_E.insert(0,np.around(t1_ik,3))
 
     t2_E.delete(0,END)
-    t2_E.insert(0,np.around(t2_ik*180/np.pi,3))
+    t2_E.insert(0,np.around(t2_ik,3))
 
     d3_E.delete(0,END)
-    d3_E.insert(0,np.around(d3_ik*180/np.pi,3))
+    d3_E.insert(0,np.around(d3_ik,3))
 
     Spherical = DHRobot([
         RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
@@ -157,7 +157,7 @@ def i_k():
     ], name="Spherical")
 
     #plot joints
-    q1 = np.array([t1_ik/100,t2_ik,d3_ik])
+    q1 = np.array([t1_ik,t2_ik,d3_ik/100])
 
     #plot scale
     x1 = -0.5
