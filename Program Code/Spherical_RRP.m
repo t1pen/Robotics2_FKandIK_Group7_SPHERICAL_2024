@@ -12,7 +12,7 @@ a3 = 20;
 
 t1 = 0;
 t2 = pi/180*(90);
-d3 = 10;
+d3 = 15;
 
 %% D-H Parameters: [theta, d, r, alpha, offset]
 % if prismatic joint: theta = theta, d = 0, offset = 1, after offset put the value of d

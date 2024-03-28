@@ -1,50 +1,189 @@
 from pathlib import Path
 from tkinter import *
+import openpyxl
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, messagebox
 import roboticstoolbox as rtb
 import numpy as np 
 from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
-
+from datetime import datetime
+import os
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\GitHub\Robotics2_FK-IK_Group7_SPHERICAL_2024\GUI Calculator\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\saloj\Documents\3rd Year 2nd Sem\Rob2\Final Project\build\assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-
 window = Tk()
-
 window.geometry("900x600")
 window.configure(bg = "#FFFFFF")
 window.title("Spherical Manipulator Calculator")
-img = PhotoImage(file='icon.png')
-window.tk.call('wm', 'iconphoto', window._w, img)
+window.iconbitmap(r"C:\Users\saloj\Documents\3rd Year 2nd Sem\Rob2\Final Project\robotic-arm.ico")
 
+# Create a workbook and add sheets for f_k and i_k data
+workbook = openpyxl.Workbook()
+f_k_sheet = workbook.create_sheet(title="f_k_data")
+i_k_sheet = workbook.create_sheet(title="i_k_data")
+
+# Counter variables for row indices in each sheet
+f_k_row_index = 1
+i_k_row_index = 1
+
+# Define a Boolean variable to track the state of the checkbutton
+save_to_excel_var = BooleanVar()
+save_to_excel_var.set(True)  # Set to off by default
+
+def toggle_save_to_excel():
+    global save_to_excel_var
 
 def reset():
     for entry in [a1_E, a2_E, a3_E, t1_E, t2_E, d3_E, x_E, y_E, z_E]:
         entry.delete(0, END)
 
-def validate_float(entry):
+
+def save_to_excel_fk():
+    global workbook, f_k_row_index, save_to_excel_var
+
+    # Check if the save to Excel checkbox is checked
+    if not save_to_excel_var.get():
+        messagebox.showinfo("Info", "Data will not be saved to Excel.")
+        return
+
+    # Check if the workbook exists
+    if Path("spherical_manipulator_data.xlsx").exists():
+        workbook = openpyxl.load_workbook("spherical_manipulator_data.xlsx")
+    else:
+        workbook = openpyxl.Workbook()
+
+    # Get current timestamp
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # Get values from entry widgets
+    a1_val = a1_E.get()
+    a2_val = a2_E.get()
+    a3_val = a3_E.get()
+    t1_val = t1_E.get()
+    t2_val = t2_E.get()
+    d3_val = d3_E.get()
+    x_val = x_E.get()
+    y_val = y_E.get()
+    z_val = z_E.get()
+
+    # Get or create sheets for f_k and i_k data
+    f_k_sheet = workbook.get_sheet_by_name("f_k_data") if "f_k_data" in workbook.sheetnames else workbook.create_sheet("f_k_data")
+
+    # Delete the first sheet if it's empty
+    if len(workbook.sheetnames) > 1 and workbook.sheetnames[0] == 'Sheet':
+        del workbook['Sheet']
+
+    if f_k_sheet.max_row == 1:
+        f_k_sheet.append(["Timestamp", "a1", "a2", "a3", "t1", "t2", "d3", "x", "y", "z"])
+
+
+    # Save data to respective sheets
+    f_k_sheet.append([timestamp, a1_val, a2_val, a3_val, t1_val, t2_val, d3_val, x_val, y_val, z_val])
+
+    # Increment row indices for next data entry
+    f_k_row_index += 1
+
+    # Save the workbook
+    workbook.save("spherical_manipulator_data.xlsx")
+
+    # Notify user that data has been saved
+    messagebox.showinfo("Data Saved", "Data has been saved to spherical_manipulator_data.xlsx")
+
+def save_to_excel_ik():
+    global workbook, i_k_row_index, save_to_excel_var
+
+    # Check if the save to Excel checkbox is checked
+    if not save_to_excel_var.get():
+        messagebox.showinfo("Info", "Data will not be saved to Excel.")
+        return
+
+    # Check if the workbook exists
+    if Path("spherical_manipulator_data.xlsx").exists():
+        workbook = openpyxl.load_workbook("spherical_manipulator_data.xlsx")
+    else:
+        workbook = openpyxl.Workbook()
+
+    # Get current timestamp
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # Get values from entry widgets
+    a1_val = a1_E.get()
+    a2_val = a2_E.get()
+    a3_val = a3_E.get()
+    t1_val = t1_E.get()
+    t2_val = t2_E.get()
+    d3_val = d3_E.get()
+    x_val = x_E.get()
+    y_val = y_E.get()
+    z_val = z_E.get()
+
+    # Get or create sheets for i_k data
+    i_k_sheet = workbook.get_sheet_by_name("i_k_data") if "i_k_data" in workbook.sheetnames else workbook.create_sheet("i_k_data")
+
+    # Delete the first sheet if it's empty
+    if len(workbook.sheetnames) > 1 and workbook.sheetnames[0] == 'Sheet':
+        del workbook['Sheet']
+
+    if i_k_sheet.max_row == 1:
+        i_k_sheet.append(["Timestamp", "a1", "a2", "a3", "x", "y", "z", "t1", "t2", "d3"])
+
+    # Save data to respective sheets
+    i_k_sheet.append([timestamp, a1_val, a2_val, a3_val, x_val, y_val, z_val, t1_val, t2_val, d3_val])
+
+    # Increment row indices for next data entry
+    i_k_row_index += 1
+
+    # Save the workbook
+    workbook.save("spherical_manipulator_data.xlsx")
+
+    # Notify user that data has been saved
+    messagebox.showinfo("Data Saved", "Data has been saved to spherical_manipulator_data.xlsx")
+
+def view_excel_file():
     try:
-        float(entry.get())
-        return True
-    except ValueError:
-        messagebox.showerror("Invalid Input", "Please enter a valid input.")
-        entry.focus_set()
-        return False
+        os.startfile("spherical_manipulator_data.xlsx")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error opening Excel file: {e}")
+
 
 def f_k():
-    entries = [a1_E, a2_E, a3_E, t1_E, t2_E, d3_E]
-    if all(validate_float(entry) for entry in entries):
-        a1, a2, a3, t1, t2, d3 = [float(entry.get()) for entry in entries]
+ # Get values from entry widgets
+    a1 = a1_E.get().strip()
+    a2 = a2_E.get().strip()
+    a3 = a3_E.get().strip()
+    t1 = t1_E.get().strip()
+    t2 = t2_E.get().strip()
+    d3 = d3_E.get().strip()
+
+
+    # Check if required fields are empty
+    if not all((a1, a2, a3, t1, t2, d3)):
+        messagebox.showerror("Error", "Please fill all required fields.")
+        return
+
+    # Convert empty fields to '0'
+    a1 = a1 if a1 else '0'
+    a2 = a2 if a2 else '0'
+    a3 = a3 if a3 else '0'
+    t1 = t1 if t1 else '0'
+    t2 = t2 if t2 else '0'
+    d3 = d3 if d3 else '0'
+
+    # Validate numeric input
+    try:
+        a1, a2, a3, t1, t2, d3 = [float(entry) for entry in (a1, a2, a3, t1, t2, d3)]
+    except ValueError:
+        messagebox.showerror("Error", "Invalid Input.")
+        return
 
     a1 = float(a1_E.get())
     a2 = float(a2_E.get())
     a3 = float(a3_E.get())
-
+    
     #link conversion to meters
     def cm_to_meter(a):
         m = 100 # 1 meter  = 100 cm
@@ -105,7 +244,9 @@ def f_k():
     Z0_3 = H0_3[2,3]
     z_E.delete(0,END)
     z_E.insert(0,np.around(Z0_3*100,3))
-    
+
+    save_to_excel_fk()
+
     #Create links
     #robot_variable = DHRobot([RevoluteDH(d,r,alpha,offset=theta,qlim)])
     #robot_variable = DHRobot([PrismaticDH(d=0,r,alpha,offset=d,qlim)])
@@ -117,75 +258,81 @@ def f_k():
 
     q1 = np.array([t1,t2,d3])
 
-        # plot scale
-    x1 = -0.5
-    x2 = 0.5
-    y1 = -0.5
-    y2 = 0.5
-    z1 = 0
-    z2 = 0.5
+    # Plot command
+    Spherical.plot(q1, block=True)
 
-        # Plot command
-    Spherical.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
 
 def i_k():
-    entries = [x_E, y_E, z_E]
-    if all(validate_float(entry) for entry in entries):
-        x, y, z = [float(entry.get()) for entry in entries]
+    # Get values from entry widgets
+    x_pos = x_E.get().strip()
+    y_pos = y_E.get().strip()
+    z_pos = z_E.get().strip()
+    a1 = a1_E.get().strip()
+    a2 = a2_E.get().strip()
+    a3 = a3_E.get().strip()
 
-    a1 = float(a1_E.get())
-    a2 = float(a2_E.get())
-    a3 = float(a3_E.get())
-
-    try:
-            t1_ik = np.arctan(y / x) * 180 / np.pi
-    except ZeroDivisionError:
-        messagebox.showerror("Error", "Zero division error detected.")
+    # Check if required fields are empty
+    if not all((a1, a2, a3, x_pos, y_pos, z_pos)):
+        messagebox.showerror("Error", "Please fill all required fields.")
         return
+    
+        # Convert empty fields to '0'
+    a1 = a1 if a1 else '0'
+    a2 = a2 if a2 else '0'
+    a3 = a3 if a3 else '0'
+    x_pos = x_pos if x_pos else '0'
+    y_pos = y_pos if y_pos else '0'
+    z_pos = z_pos if z_pos else '0'
 
-    # Position Vector
+    # Validate numeric input
+    try:
+        a1, a2, a3, x_pos, y_pos, z_pos = [float(entry) for entry in (a1, a2, a3, x_pos, y_pos, z_pos)]
+    except ValueError:
+        messagebox.showerror("Error", "Invalid Input.")
 
-    x_pos = float(x_E.get())
-    y_pos = float(y_E.get())
-    z_pos = float(z_E.get())
+    # Convert values to float
+    x_pos = float(x_E.get()) /100
+    y_pos = float(y_E.get()) /100
+    z_pos = float(z_E.get()) /100
+    a1 = float(a1_E.get()) /100 # Convert a1 from cm to meters
+    a2 = float(a2_E.get()) /100 # Convert a2 from cm to meters
+    a3 = float(a3_E.get()) /100 # Convert a3 from cm to meters
 
-  
-
+    # Perform inverse kinematics calculations
+    
     ## Formula List
-    t1_ik = np.arctan(y_pos/x_pos)*180/np.pi # Formula 1
-    r1 = np.sqrt((x_pos**2) + (y_pos**2)) # Formula 2
+    t1_ik = np.arctan(y_pos/x_pos) # Formula 1
+    r1 = np.sqrt((x_pos)**2 + (y_pos)**2) # Formula 2
     r2 = z_pos - a1 # Formula 3 
-    t2_ik = np.arctan(r2/r1)*180/np.pi # Formula 4
-    d3_ik = np.sqrt((r1**2) + (r2**2)) - a2 - a3 # Formula 5
+    t2_ik = np.arctan(r2/r1) # Formula 4
+    d3_ik_cm = np.sqrt((r1**2) + (r2**2)) - a2 - a3 # Formula 5
 
-    t1_E.delete(0,END)
-    t1_E.insert(0,np.around(t1_ik,3))
 
-    t2_E.delete(0,END)
-    t2_E.insert(0,np.around(t2_ik,3))
+    # Update the entry widgets with the calculated values
+    t1_E.delete(0, END)
+    t1_E.insert(0, np.around(t1_ik*180/np.pi, 3))
 
-    d3_E.delete(0,END)
-    d3_E.insert(0,np.around(d3_ik,3))
+    t2_E.delete(0, END)
+    t2_E.insert(0, np.around(t2_ik*180/np.pi, 3))
 
-    Spherical = DHRobot([
-        RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
-        RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[0,np.pi/2]),
-        PrismaticDH(0,0,(0.0/180)*np.pi,a2+a3,qlim=[0,d3_ik])
-    ], name="Spherical")
+    d3_E.delete(0, END)
+    d3_E.insert(0, np.around(d3_ik_cm*100, 3))  # Display in cm
 
-    #plot joints
-    q1 = np.array([t1_ik,t2_ik,d3_ik/100])
 
-    #plot scale
-    x1 = -0.5
-    x2 = 0.5
-    y1 = -0.5
-    y2 = 0.5
-    z1 = 0.0
-    z2 = 0.5     
+    save_to_excel_ik()
 
     # Plot commands
-    Spherical.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
+    Spherical = DHRobot([
+    RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
+    RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[0,np.pi/2]),
+    PrismaticDH(0,0,(0.0/180)*np.pi,a2+a3,qlim=[0,d3_ik_cm])
+    ], name="Spherical")
+
+    q1 = np.array([t1_ik, t2_ik, d3_ik_cm])  # Use d3_ik_m (in meters)
+
+    # Plot commands
+    Spherical.plot(q1, block=True)
+
 
 canvas = Canvas(
     window,
@@ -429,7 +576,7 @@ entry_bg_3 = canvas.create_image(
     194.5,
     image=entry_image_3
 )
-a1_E = Entry(
+a1_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -450,7 +597,7 @@ entry_bg_2 = canvas.create_image(
     234.5,
     image=entry_image_2
 )
-a2_E = Entry(
+a2_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -471,7 +618,7 @@ entry_bg_1 = canvas.create_image(
     274.5,
     image=entry_image_1
 )
-a3_E = Entry(
+a3_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -492,7 +639,7 @@ entry_bg_4 = canvas.create_image(
     414.0,
     image=entry_image_4
 )
-t1_E = Entry(
+t1_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -513,7 +660,7 @@ entry_bg_5 = canvas.create_image(
     453.5,
     image=entry_image_5
 )
-t2_E = Entry(
+t2_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -534,7 +681,7 @@ entry_bg_6 = canvas.create_image(
     493.5,
     image=entry_image_6
 )
-d3_E = Entry(
+d3_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -555,7 +702,7 @@ entry_bg_7 = canvas.create_image(
     414.0,
     image=entry_image_7
 )
-x_E = Entry(
+x_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -576,7 +723,7 @@ entry_bg_8 = canvas.create_image(
     453.5,
     image=entry_image_8
 )
-y_E = Entry(
+y_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -597,7 +744,7 @@ entry_bg_9 = canvas.create_image(
     495.0,
     image=entry_image_9
 )
-z_E = Entry(
+z_E = Entry(window,
     font=('Calibri', 13),
     bd=0,
     bg="#D9D9D9",
@@ -690,5 +837,44 @@ image_2 = canvas.create_image(
     459.0,
     image=image_image_2
 )
+
+# Create the checkbutton
+save_to_excel_checkbutton = Checkbutton(
+    window,
+    variable=save_to_excel_var,
+    command=toggle_save_to_excel,
+    bg="#262626",
+    activebackground="#262626",
+    selectcolor="#51FF00",
+)
+save_to_excel_checkbutton.place(
+    x=100,
+    y=565
+)
+
+save_to_excel_label = Label(
+    text='Record Data',
+    font= ('Calibri', (12)),
+    fg= '#FFFFFF',
+    bg= '#262626'
+)
+
+save_to_excel_label.place(
+    x=120,
+    y=565
+)
+view_excel_button = Button(
+    text= "View Excel",
+    fg= 'black',
+    bg= '#51FF00',
+    font= ('Metropolis Extra Bold', 10),
+    command= view_excel_file
+)
+
+view_excel_button.place(
+    x=10,
+    y=567
+)
+
 window.resizable(False, False)
 window.mainloop()
