@@ -1,4 +1,60 @@
 # Robotics2_FKandIK_Group7_SPHERICAL_2024
+<h1 align="center"> Robotics 2 - Forward and Inverse Kinematics of Spherical Manipulator </h1>
+<br>
+
+
+## Table of Contents
+  - [I. Abstract](#i.-abstract-)
+  - [II. Introduction](#-ii.-introduction-)
+  - [III. Degrees of Freedom](#-iii.-degrees-of-freedom-)
+  - [IV. Kinematic Diagram and D-H Frame](#-iv.-kinematic-diagram-and-d-h-frame-)
+  - [V. D-H Parametric Table](#-v.-d-h-parametric-table-)
+  - [VI. Homogeneous Transformation Matrix](#-vi.-homogeneous-transformation-matrix-)
+  - [VII. Inverse Kinematics](#-vii.-inverse-kinematics-)
+  - [VIII. Forward and Inverse Kinematics (GUI calculator)](#-viii.-forward-and-inverse-kinematics-(gui-calculator)-)
+  - [IX. References](#-ix.-references-)
+  - [X. Members](#-x.-members)
+<hr> 
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Table of Contents
 - [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-kinematic-diagram-and-parametric-table-of-spherical-manipulator-)
