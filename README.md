@@ -113,6 +113,21 @@
 <br>
 
 
+#### Degrees of Freedom (DOF) Computation:
+
+<div align="center">
+  
+|  RRP Spherical Manipulator  | Solution |
+|         :---: |     :-----:      |
+| <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/47e17d1beba12200080123f1b98170126aadcb39/First%20Page/DOF%20Fig.png alt=DOF-Fig style="height: 200px; float: left;"> |  $$M = 6n - \sum_{i=1}^m (6-Ci)$$  $$M = 6(3) - [(6-1) + (6-1) + (6-1)]$$  $$M = 18 - (5 + 5 + 5)$$  $$M = 18 - 15$$  $$M = 3$$  <p>&#8756; This is an Under-Actuated Spatial Manipulator with 3-DOF.</p> |
+
+</div>
+
+<hr> 
+<br>
+
+
+
 
 
 
