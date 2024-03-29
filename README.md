@@ -9,7 +9,7 @@
   - [V. D-H Parametric Table](#-v.-d-h-parametric-table)
   - [VI. Homogeneous Transformation Matrix](#-vi.-homogeneous-transformation-matrix)
   - [VII. Inverse Kinematics](#-vii.-inverse-kinematics)
-  - [VIII. Forward and Inverse Kinematics (GUI calculator)](#-viii.-forward-and-inverse-kinematics-(gui-calculator)-)
+  - [VIII. Forward and Inverse Kinematics Calculator (Application)](#viii-forward-and-inverse-kinematics-calculator-application)
   - [IX. References](#-ix.-references)
   - [X. Members](#-x.-members)
 <hr> 
