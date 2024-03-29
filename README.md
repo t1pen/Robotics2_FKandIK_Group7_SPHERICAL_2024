@@ -338,10 +338,6 @@
       - Then to solve for d<sub>3</sub>, we will use the Pythagorean Theorem.
 <br>
 
-
-
-
-
 ## VIII. Forward and Inverse Kinematics Calculator (Application)
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -384,13 +380,18 @@ Even though Tkinter Designer generates the code itself, code is still needed to 
 ___
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-The design of the Graphical User Interface focuses on a modern approach. A  dark grey backrground <code> #262626
-<svg width="8" height="8" fill="#262626" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> with green accents <code> #51FF00
-<svg width="8" height="8" fill="#51FF00" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> was used for a versatile look of the graphical user interface. It also uses a white text <code> #FFFFFF
-<svg width="8" height="8" fill="#FFFFFF" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> on the sections of Link Lengths, Joint Variables, Position Vector, and unit labels. The entry boxes have a lighter gray color <code> #D9D9D9
-<svg width="8" height="8" fill="#D9D9D9" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> to it while the buttons a much darker gray color <code> #888888
-<svg width="8" height="8" fill="#888888" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> but not as dark as the background of the GUI. This is the initial output design done with Figma.
+The design of the Graphical User Interface focuses on a modern approach. The GUI uses the following colors for the design of the GUI. 
 </p>
+
+#### Color Pallete
+
+- ![#262626](https://via.placeholder.com/15/262626/000000?text=+) `#262626` - Background of the GUI.
+- ![#51FF00](https://via.placeholder.com/15/51FF00/000000?text=+) `#51FF00` - Accent Color of the GUI.
+- ![#D9D9D9](https://via.placeholder.com/15/D9D9D9/000000?text=+) `#D9D9D9` - Entry Boxes of the GUI.
+- ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF` - Font Color of the GUI.
+- ![#888888](https://via.placeholder.com/15/888888/000000?text=+) `#888888` - Buttons of the GUI.
+
+<br>
 
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Figma%20Design.png?raw=true">
@@ -428,7 +429,7 @@ The reset deletes all the entries present in the all entry boxes. By clicking th
 #### Forward Button
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-The forward button performs the forward kinematics of function of the calculator. The function of these button is to get entry values from entry boxes of the link lengths and the joint variable and do the computations of forward kinematics to obtain the position vector. It also saves the datas in an excel file when the <a href='#record-data'>Record Data Checkbox</a>  is checked. Additionally, it launches the <code>roboticstoolbox</code> that visually shows the orientation of the manipulator based on the data entered and computation.
+The forward button performs the forward kinematics of function of the calculator. The function of these button is to get entry values from entry boxes of the link lengths and the joint variable and do the computations of forward kinematics to obtain the position vector. It also saves the datas in an excel file when the <a href='#recording-data'>Record Data Checkbox</a>  is checked. Additionally, it launches the <code>roboticstoolbox</code> that visually shows the orientation of the manipulator based on the data entered and computation.
 </p>
 
 <p align="center">
