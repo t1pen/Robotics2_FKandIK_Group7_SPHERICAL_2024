@@ -346,6 +346,7 @@ After the manual calculation of the requirements to build the spherical manipula
 
 ### Libraries Used:
 ___
+
 These are the following libraries used for the application:
 
 - [`roboticstoolbox-python`](https://github.com/petercorke/robotics-toolbox-python) This library was used to visually display the spherical manipulator model after forward and Inverse Kinematics Calculation was done.
