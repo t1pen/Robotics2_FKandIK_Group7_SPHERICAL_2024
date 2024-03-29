@@ -347,7 +347,7 @@
 <br>
 
 
-### IX. References
+## IX. References
 -
 -
 -
@@ -357,13 +357,13 @@
 <br>
 
 
-## X. Group Members:
-  - Alojado, Stephen Gabriel S.
-  - Apostol, Jan Benedict D.
-  - Cardenas, Sofia Bianca J.
-  - Catapang, Jamil Darrius S.
-  - Umali, Ariane Mae D.<br>
 
+## Group Members:
+- Alojado, Stephen Gabriel S.
+- Apostol, Jan Benedict D.
+- Cardenas, Sofia Bianca J.
+- Catapang, Jamil Darrius S.
+- Umali, Ariane Mae D.
 
 
 
