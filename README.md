@@ -1,6 +1,4 @@
 # Robotics2_FKandIK_Group7_SPHERICAL_2024
-<h1 align="center"> Robotics 2 - Forward and Inverse Kinematics of Spherical Manipulator </h1>
-<br>
 
 
 ## Table of Contents
