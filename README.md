@@ -11,7 +11,7 @@
   - [VII. Inverse Kinematics](#vii-inverse-kinematics)
   - [VIII. Forward and Inverse Kinematics Calculator (Application)](#viii-forward-and-inverse-kinematics-calculator-application)
   - [IX. References](#ix-references)
-  - [X. Members](#x-members)
+  - [X. Group Members](#x-members)
 <hr> 
 <br>
 
