@@ -167,6 +167,52 @@
 
 
 
+### D-H Frame
+
+  <p align="center">
+  <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png alt=Spherical-Manipulator-Kinematic-Diagram-with-D-H-Frame style="height: 300px;"></p>
+<p align="center"> Figure 3. Kinematic Diagram and D-H Frame of a Spherical Manipulator </p>
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>D-H Notation</i></b> was introduced by <b>Jacques Denavit</b> and <b>Richard Hartenberg</b> in <b>1955</b> in order to standardize the coordinate frames for spatial linkages. D-H notation is used to solve the forward kinematics of a mechanical manipulator. </p>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <b><i>Frames</i></b> in a Mechanical Manipulator are used to determine where they are and where they need to go. It also shows the movement of our mechanical manipulator. The frames are positioned at each part of the mechanical manipulator, including the base, joints, and end effector.  </p>
+<br>
+
+#### Three Types of Frames used in Mechanical Manipulator:
+  - Base (World) Frame
+  - User Frame
+  - Tool Frame
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>D-H Frame Rules</i></b> is the rules used in assigning frames in a kinematic diagram.  </p>
+<br>
+
+  - **Rule 1**: The z axis must be the axis of rotation for a revolute/twisting joint, or the direction of translation for a prismatic joint.
+  - **Rule 2**: The x axis must be perpendicular both to its own Z axis, and the Z axis of the frame before it. \
+  - **Rule 3**: Each axis must intersect the z axis of the frame before it. The rules for complying rule 3:
+      - Rotate the axis until it hits the other.
+      - Translate the axis until it hits the other.
+  - **Rule 4**: All frames must follow the right hand rule. 
+<br>
+
+
+<p align="center"> <b>Kinematic Diagram and D-H Frame Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=Kinematic-Diagram-and-D-H-Frame-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
+
+
+## V. D-H Parametric Table
 
 
 
