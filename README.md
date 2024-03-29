@@ -51,6 +51,70 @@
 
 
 
+## III. Degrees of Freedom
+
+  <p align="justify"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In robotics, <b><i>Degrees of Freedom</i></b> (DOF) refer to the number of independent parameters that define the configuration or motion of a robot. Essentially, it indicates how many different ways a robot can move within its environment.The more the degree of freedom, the more flexible and adaptable the robot. A robot with high DOF can make more complex movements and perform a variety of tasks.</p>
+  
+<p class="blank-line">&nbsp;</p>
+
+#### The Ideal Degrees of Freedom:
+  - A <b>point</b> in 2D: 2-DOF; in 3D space: 3-DOF
+  - A <b>rigid body</b> in 3D: 6-DOF
+  - <b>Planar Manipulator</b>: 3-DOF
+  - <b>Spatial manipulator</b>: 6-DOF
+<br>
+
+#### Types of Manipulator based on the number of Degrees of Freedom:
+  - <b>Under-Actuated Manipulator</b>
+      - _Spatial Manipulator_ with less than 6-DOF
+      - _Planar Manipulator_ with less than 3-DOF
+  - <b>Ideal manipulator</b>
+      - _Spatial Manipulator_ with exactly 6-DOF
+      - _Planar Manipulator_ with exactly 3-DOF
+  - <b>Redundant manipulator</b>
+      - _Spatial Manipulator_ with more than 6-DOF
+      - _Planar Manipulator_ with more than 3-DOF
+<br>
+
+#### Grubler's Criterion for Mobility
+  - Formula for the Mobility of _Spatial Manipulator_
+    $$M = 6n - \sum_{i=1}^m (6-Ci)$$
+  - Formula for the Mobility of _Planar Manipulator_
+    $$M = 3n - \sum_{i=1}^m (3-Ci)$$
+<br>
+
+#### Grubler's Criterion for Mobility
+<div align="center">
+  
+|  Formula for the Mobility of _Spatial Manipulator_  | Formula for the Mobility of _Planar Manipulator_ |
+|         :---: |     :-----:      |
+| $$M = 6n - \sum_{i=1}^m (6-Ci)$$ |  $$M = 3n - \sum_{i=1}^m (3-Ci)$$ |
+
+</div>
+
+<br>
+
+#### Mechanical Manipulator Anatomy
+
+<div align="center">
+  
+|  Joint type  | DOF *f* | Constraints *c* between two planar rigid bodies | Constraints *c* between two spatial rigid bodies |
+|         ---: |     :-----:      |     :---:     |     :---:    |
+|  Revolute (R)  |  1  |  2  |  5  |
+|  Prismatic (P)  |  1  |  2  |  5  |
+|  Helical (H)  |  1  |  N/A  |  5  |
+|  Cylindrical (C)  |  2  |  N/A  |  4  |
+|  Universal (U)  |  2  |  N/A  |  4  |
+|  Spherical (S)  |  3  |  N/A  |  3  |
+
+</div>
+
+<br>
+
+
+
+
 
 
 
