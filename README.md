@@ -48,7 +48,6 @@
 
 
 
-
 ## III. Degrees of Freedom
 
   <p align="justify"> 
@@ -529,9 +528,6 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 - Cardenas, Sofia Bianca J.
 - Catapang, Jamil Darrius S.
 - Umali, Ariane Mae D.
-
-
-
 
 
 
