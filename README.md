@@ -369,7 +369,7 @@ Tkinter is known for its old school way of creating GUI in terms of its aestheti
 </p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/42001064/119863796-92af4a80-bf37-11eb-9f6c-61b1ab99b039.png">
+<img src="https://user-images.githubusercontent.com/42001064/119863796-92af4a80-bf37-11eb-9f6c-61b1ab99b039.png" width= 700>
 </p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -394,7 +394,7 @@ The design of the Graphical User Interface focuses on a modern approach. The GUI
 <br>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Figma%20Design.png?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Figma%20Design.png?raw=true" width= 700>
 </p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -402,7 +402,7 @@ However through out the design process and coding the application, we opted to a
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Final%20GUI%20Design.png?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Final%20GUI%20Design.png?raw=true" width= 700>
 </p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -423,7 +423,7 @@ The reset deletes all the entries present in the all entry boxes. By clicking th
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Reset_Button.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Reset_Button.gif?raw=true" width= 700>
 </p>
 
 #### Forward Button
@@ -433,7 +433,7 @@ The forward button performs the forward kinematics of function of the calculator
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Forward_Button.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Forward_Button.gif?raw=true" width= 700>
 </p>
 
 #### Inverse Button
@@ -443,7 +443,7 @@ Just like the forward button, this button is binded to run a function for invers
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Inverse_Button.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Inverse_Button.gif?raw=true" width= 700>
 </p>
 
 #### Recording Data
@@ -453,7 +453,7 @@ When obtaining the data, it is nice to runback through the obtained results of f
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif?raw=true" width= 700>
 </p>
 
 #### Error Message Boxes
@@ -465,19 +465,19 @@ When entering data, it is inevitable to encounter mistakes. We designed the appl
 - __Please fill all required fields__ - this error will be encountered if the required entry boxes for either forward or inverse are not filled. 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif?raw=true" width= 700>
 </p>
 
 - __Invalid Input__ - this error will be encountered when a non float value is detected in on the entry boxes. It will be prompt 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif?raw=true" width= 700>
 </p>
 
 - __Undefined__ - this error occurs when ``ZeroDivisionError`` occured on the inverse kinematics computation. These is due to the [Formula #1]() of the inverse kinematics computation. 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif?raw=true">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif?raw=true" width= 700>
 </p>
 
 ### Installation
