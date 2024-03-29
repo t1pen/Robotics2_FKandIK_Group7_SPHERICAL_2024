@@ -167,13 +167,6 @@
 
 ### D-H Frame
 
-  <p align="center">
-  <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png alt=Spherical-Manipulator-Kinematic-Diagram-with-D-H-Frame style="height: 300px;"></p>
-<p align="center"> Figure 3. Kinematic Diagram and D-H Frame of a Spherical Manipulator </p>
-</div>
-<br>
-
-
  <p align="justify"> 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>D-H Notation</i></b> was introduced by <b>Jacques Denavit</b> and <b>Richard Hartenberg</b> in <b>1955</b> in order to standardize the coordinate frames for spatial linkages. D-H notation is used to solve the forward kinematics of a mechanical manipulator. </p>
 <br>
@@ -203,6 +196,13 @@
 <br>
 
 
+  <p align="center">
+  <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png alt=Spherical-Manipulator-Kinematic-Diagram-with-D-H-Frame style="height: 300px;"></p>
+<p align="center"> Figure 3. Kinematic Diagram and D-H Frame of a Spherical Manipulator </p>
+</div>
+<br>
+
+
 <p align="center"> <b>Kinematic Diagram and D-H Frame Tutorial Video</b> </p>
   <p align="center">
   <img src=link alt=Kinematic-Diagram-and-D-H-Frame-Tutorial-Video style="height: 300px; float: left;">
@@ -212,6 +212,60 @@
 
 ## V. D-H Parametric Table
 
+#### Steps in Denavit-Hartenberg Notation
+  1.  Assign the frames according to the 4 D-H Frame Rules.
+  2.  Construct and fill out the D-H Parametric Table.
+  3.  Plug the table into the Homogeneous Transformation Matrix form.
+  4.  Multiply the matrices together.
+<br>
+
+
+<p align="center"> <b>Example of D-H Parametric Table</b> </p>
+
+<div align="center">
+  
+|  n  | &Theta; | &alpha; | r | d |
+|     :---:     |     :---:     |     :---:     |     :---:    |     :---:     
+|  1  |    |    |    |
+|  2  |    |    |    |
+|  3  |    |    |    |
+|  4  |    |    |    |
+
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The <b><i>Four Parameters</i></b> in the D-H Parametric are  &Theta;, &alpha; r and d. The &Theta; and the &alpha are the rotation or orientation parameters and their units are in degrees or radian. While d and r are the position or translation parameters and their units are in units of length.
+  </p>
+<br>
+
+
+<div align="center">
+  
+| &Theta; | &alpha; | r | d |
+|     :---:     |     :---:     |     :---:    |     :---:     
+|  <b>"&Theta;"</b> is the rotation around z <sub>n-1</sub> that is required to get x <sub>n-1</sub> to match x <sub>n</sub>, with the joint variable theta if the joint is a revolute or twisting joint.  |   <b>"&alpha;"</b> is the rotation around x <sub>n</sub> that is required to match z <sub>n-1</sub> to z <sub>n</sub>.  |  <b>"d"</b> is the distance from the origin of n-1 and n frames along the z <sub>n-1</sub> direction with the joint variable if the joint is prismatic.  |  <b>"r"</b> is the distance from the origin of n-1 and n frames along the x <sub>n</sub> direction.  |
+
+</div>
+<br>
+
+
+<p align="center"> <b>D-H Parametric Table of Spherical Manipulator</b> </p>
+  <p align="center">
+  <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/f7fb56960b0356ba05be5484fbbf70c3b3404437/First%20Page/D-H%20parametric%20Table.png alt=D-H-Parametric-table-of-Speherical-Manipulator style="height: 300px;"></p>
+</div>
+<br>
+
+
+<p align="center"> <b>D-H Prametric Table Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=D-H-Parametic-Table-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
+
+
+## VI. Homogeneous Transformation Matrix
 
 
 
