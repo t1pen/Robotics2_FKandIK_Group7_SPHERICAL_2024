@@ -159,9 +159,9 @@
     
 <br>
 
- <p align="justify"> 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Joint Variables,</i></b> are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> (&Theta;), theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as <b><i>d,</i></b> <b><i>d</i></b> is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.</p>
-<br>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <b><i>Joint Variables</i></b>, are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> ($&theta;$) , theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as $d$, $d$ is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.
+</p>
 
 
 
@@ -329,13 +329,13 @@
 
 #### Summary of the Step-by-Step Process on How to Find the Inverse Kinematics of a Spherical Manipulator
   - On the <b><i>Top View</b></i>:
-    - To solve for &Theta;<sub>1</sub>, we use the inverse tangent because Y<sup>0</sup><sub>3</sub> and X<sup>0</sup><sub>3</sub> is given.
-    - We can’t use a<sub>2</sub> + a<sub>3</sub> + d<sub>3</sub> as hypotenuse that’s why we name our hypotenuse as r<sub>1</sub>.
+    - To solve for $\theta$<sub>1</sub>, we use the inverse tangent because $Y_{3}^{0}$ and $X_{3}^{0}$ is given.
+    - We can’t use $a_{2} + a_{3} + d_{3}$ as hypotenuse that’s why we name our hypotenuse as $r_{1}$.
   - On the <b><i>Front View</b></i>:
-      - r<sub>1</sub> is the length of the link of the prismatic joint and the end-effector that change if &Theta;<sub>2</sub> changes its orientation.
-      - Then for the new side, which is the r<sub>2</sub> to get the value of Z<sup>0</sup><sub>3</sub>, so the r<sub>2</sub> is equal to Z<sup>0</sup><sub>3</sub> - a<sub>1</sub>.
-      - To solve for &Theta;<sub>2</sub>, we can use again the inverse tangent formula.
-      - Then to solve for d<sub>3</sub>, we will use the Pythagorean Theorem.
+      - $r_{1}$ is the length of the link of the prismatic joint and the end-effector that change if $\theta_{2}$ changes its orientation.
+      - Then for the new side, which is the $r_{2}$ to get the value of $Z_{3}^{0}$, so the $r_{2}$ is equal to $Z_{3}^{0} - a_{1}$.
+      - To solve for $\theta_{2}$, we can use again the inverse tangent formula.
+      - Then to solve for $d_{3}$, we will use the Pythagorean Theorem.
 <br>
 
 ## VIII. Forward and Inverse Kinematics Calculator (Application)
