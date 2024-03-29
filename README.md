@@ -77,12 +77,6 @@
       - _Planar Manipulator_ with more than 3-DOF
 <br>
 
-#### Grubler's Criterion for Mobility
-  - Formula for the Mobility of _Spatial Manipulator_
-    $$M = 6n - \sum_{i=1}^m (6-Ci)$$
-  - Formula for the Mobility of _Planar Manipulator_
-    $$M = 3n - \sum_{i=1}^m (3-Ci)$$
-<br>
 
 #### Grubler's Criterion for Mobility
 <div align="center">
