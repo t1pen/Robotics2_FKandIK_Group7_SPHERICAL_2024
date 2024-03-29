@@ -152,6 +152,26 @@
 </div>
 <br>
 
+  <p align="justify"> 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Links</i></b> are the rigid parts of the mechanical manipulator. A link is defined as a single part that can be a resistant body or a composite of resistant bodies with inflexible connections and relative motion in relation to other machine components. Also, joints are considered links and the values are constant:</p>
+    
+  - If it is revolute or twisting, links are drawn from the center of the rotation. </p>
+  - If it is prismatic, either linear or orthogonal, links are drawn from the center of translation.
+  - If it is from base, links are drawn from the center of gravity.
+    
+<br>
+
+ <p align="justify"> 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Joint Variables,</i></b> are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>.A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> (&Theta;), theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as <b><i>d,</i></b> <b><i>d</i></b> is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.</p>
+<br>
+   
+
+<span style="font-family: Arial, sans-serif; font-size: 18px;">Computation:</span>
+<p align="center">
+  <img src=(paste-link-here) alt=(Name) width="700"/>
+</p>
+<hr> 
+<br>
 
 
 
@@ -175,22 +195,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ## Table of Contents
 - [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-kinematic-diagram-and-parametric-table-of-spherical-manipulator-)
 - [Derivation of Inverse Kinematics using Graphical Method](#-derivation-of-inverse-kinematics-using-graphical-method-)
