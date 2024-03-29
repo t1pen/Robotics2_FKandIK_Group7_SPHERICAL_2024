@@ -127,6 +127,31 @@
 <br>
 
 
+## IV. Kinematic Diagram and D-H Frame
+
+  <p align="justify"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <b><i>Kinematic Diagram</i></b> is a simplified representation of a mechanism that illustrates the motion of all the components without showing the forces or the physical dimensions that cause the motion. It is an important tool used in mechanical engineering to examine the motion of mechanisms. Typically, the diagram shows the mechanism's joints and links in schematic form. It is also a diagram that shows how the links and joints are connected together when all of the joint variables have a value of 0.
+</p>
+<br>
+
+<div align="center">
+  
+<table border="1">
+  <tr>
+    <th colspan="2">Joint Variables</th>
+  </tr>
+  <tr>
+    <td> <p align="center">Twisting or Revolute Joint</p> </td>
+    <td> <p align="center">Prismatic Linear or Orthogonal Joints</p> </td>
+  </tr>
+  <tr>
+    <td><img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/af546ee69ca1e190b12295380745505086c36d6b/First%20Page/Twisting%20or%20Revolute%20Joint.png alt=Twisting-or-Revolute-Joint style="height: 230px; float: left;"></td>
+    <td><img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/af546ee69ca1e190b12295380745505086c36d6b/First%20Page/Prismatic%20Linear%20or%20Orthoganal%20Joint.png alt=Prismatic-Linear-or-Orthogonal-Joints style="height: 200px; float: left;"></td></td>
+  </tr>
+</table>
+</div>
+<br>
+
 
 
 
