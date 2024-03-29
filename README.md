@@ -342,7 +342,168 @@
 
 
 
-## VIII. Forward and Inverse Kinematics (GUI calculator)
+## VIII. Forward and Inverse Kinematics Calculator (Application)
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+After the manual calculation of the requirements to build the spherical manipulator, the students applies it in a software based manner for better visualization and interpretation of the theories used in building the spherical manipulator. This was done using <a href='https://www.python.org/'>Python</a> and other libraries that are essential to build the application. 
+</p>
+
+### Libraries Used:
+___
+These are the following libraries used for the application:
+
+- [`roboticstoolbox-python`](https://github.com/petercorke/robotics-toolbox-python) This library was used to visually display the spherical manipulator model after forward and Inverse Kinematics Calculation was done.
+
+- [`numpy`](https://github.com/numpy/numpy) This library was used for mathematical expressions required in modelling the manipulator and express it in Python format.
+
+- [`tkinter`]() This is a library included when you install python. This serves as the library for building the _Graphical User Interface_ (GUI) of the application
+
+- [`openpyxl`](https://openpyxl.readthedocs.io/en/stable/) This library was used in order to save data in an excel file. This helps the user to track down results or serves as the history of results of the application.
+
+- [`pyinstaller`](https://pyinstaller.org/en/stable/) This is used to convert the Python files to an Executable file that allows the application to run to other devices without the necessity to installation of libraries and Python.
+
+- [`auto-py-to-exe`](https://pypi.org/project/auto-py-to-exe/) This library is a .py to .exe converter that uses a simple graphical interface and PyInstaller instead of converting the python file in a terminal.
+
+
+
+### Tkinter Designer
+___
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Tkinter is known for its old school way of creating GUI in terms of its aesthetics. <a href="https://github.com/ParthJadhav/Tkinter-Designer">Tkinter Designer</a> is a gui creator developed by <a href="https://github.com/ParthJadhav">ParthJadhav</a> to create modern GUI using a design sofware <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1350011666009633546">Figma</a>. Tkinter Designer uses the Figma API in reading the design file and generates the codes and resource files (assets) needed for the designed GUI. This still uses codes that is built in with tkinter. 
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42001064/119863796-92af4a80-bf37-11eb-9f6c-61b1ab99b039.png">
+</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Even though Tkinter Designer generates the code itself, code is still needed to be modify because some resources such as fonts and element alignment are not interpreted in the code properly. Troubleshooting and debugging is necessary.  
+</p>
+
+### Graphical User Interface Design
+___
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The design of the Graphical User Interface focuses on a modern approach. A  dark grey backrground <code> #262626
+<svg width="8" height="8" fill="#262626" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> with green accents <code> #51FF00
+<svg width="8" height="8" fill="#51FF00" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> was used for a versatile look of the graphical user interface. It also uses a white text <code> #FFFFFF
+<svg width="8" height="8" fill="#FFFFFF" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> on the sections of Link Lengths, Joint Variables, Position Vector, and unit labels. The entry boxes have a lighter gray color <code> #D9D9D9
+<svg width="8" height="8" fill="#D9D9D9" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> to it while the buttons a much darker gray color <code> #888888
+<svg width="8" height="8" fill="#888888" class="ml-1 border circle color-border-subtle"><rect width="100%" height="100%"/></svg></code> but not as dark as the background of the GUI. This is the initial output design done with Figma.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Figma%20Design.png?raw=true">
+</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+However through out the design process and coding the application, we opted to add additional features such as saving the data to an excel file. Moreover, we also added a checkbutton that decides whether the Data will be recorded or not. Below is the final design of the application's GUI run in python.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Final%20GUI%20Design.png?raw=true">
+</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Some circumstances such as the font used on the title are modified with what is available with tkinter. Otherwise, the design of the GUI was accomplished based on the user's specification.
+</p>
+
+### Functionality
+___
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Tkinter designer only generates the design of the GUI of application but does not directly bind the functionality of the application. With these, we defined functions and bind it with the buttons present in the GUI.
+</p>
+
+#### Reset Button
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The reset deletes all the entries present in the all entry boxes. By clicking the reset button, it is expected to do the its function. Here is the demo of the function. 
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Reset_Button.gif?raw=true">
+</p>
+
+#### Forward Button
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The forward button performs the forward kinematics of function of the calculator. The function of these button is to get entry values from entry boxes of the link lengths and the joint variable and do the computations of forward kinematics to obtain the position vector. It also saves the datas in an excel file when the <a href='#record-data'>Record Data Checkbox</a>  is checked. Additionally, it launches the <code>roboticstoolbox</code> that visually shows the orientation of the manipulator based on the data entered and computation.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Forward_Button.gif?raw=true">
+</p>
+
+#### Inverse Button
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Just like the forward button, this button is binded to run a function for inverse kinematics calculation. Instead, this get entry values from the link lengths and position vector in order to obtain the values of the joint variables. This also record the data when the <a href='#recording-data'>Record Data Checkbox</a> is checked. Then it launches <code>roboticstoolbox</code> to show the orientation of the manipulator.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Inverse_Button.gif?raw=true">
+</p>
+
+#### Recording Data
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When obtaining the data, it is nice to runback through the obtained results of from the calculator. Glad to help you with that because this calculator records your data instantaneously in an excel file. You also have an option to turn off this feature by unchecking the checkbox. You can also know if the data is recorded or not through an info message box that pop-up the screen. The video below shows the demonstration of turning off/on the record data checkbox.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif?raw=true">
+</p>
+
+#### Error Message Boxes
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When entering data, it is inevitable to encounter mistakes. We designed the application to be responsive to these mistake through an error message box showing the error that has occured. Errors are listed below.
+</p>
+
+- __Please fill all required fields__ - this error will be encountered if the required entry boxes for either forward or inverse are not filled. 
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif?raw=true">
+</p>
+
+- __Invalid Input__ - this error will be encountered when a non float value is detected in on the entry boxes. It will be prompt 
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif?raw=true">
+</p>
+
+- __Undefined__ - this error occurs when ``ZeroDivisionError`` occured on the inverse kinematics computation. These is due to the [Formula #1]() of the inverse kinematics computation. 
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif?raw=true">
+</p>
+
+### Installation
+___
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Installation of the application can be done in two ways: <b>Installer</b>, or <b>Portable Software</b>.
+</p>
+
+#### Installer (Installation Guide)
+
+1. Download and run the [SphericalCalc_v2.5_setup.exe](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalc_v2.5_setup.exe) file.
+2. During install it in a directory such as Desktop or Document.
+3. Do not launch the app yet and close the installer.
+4. Install the fonts from the _fonts_ folder
+5. Run __Spherical_GUI.exe__ and enjoy the app.
+
+<sub>Installation Video <a href="">Here</a></sub>
+
+#### Portable Software
+
+1. Download the zip file [SphericalCalcZip.zip](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcZip.zip).
+2. Extract the file.
+3. Install the fonts from the _fonts_ folder.
+4. Run __Spherical_GUI.exe__ and enjoy the app.
+
+<sub>Installation Video <a href="">Here</a></sub>
 
 <br>
 
