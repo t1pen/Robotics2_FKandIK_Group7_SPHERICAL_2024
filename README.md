@@ -160,7 +160,7 @@
 <br>
 
  <p align="justify"> 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Joint Variables,</i></b> are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>.A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> (&Theta;), theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as <b><i>d,</i></b> <b><i>d</i></b> is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.</p>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Joint Variables,</i></b> are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> (&Theta;), theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as <b><i>d,</i></b> <b><i>d</i></b> is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.</p>
 <br>
 
 
@@ -266,6 +266,30 @@
 
 
 ## VI. Homogeneous Transformation Matrix
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Furthermore, homogeneous transformation matrices are described as matrices that specify an object's position and orientation. 3x3 rotation matrices can be combined using multiplication. Position vectors cannot be added or multiplied. And to combine position vectors, we shall use the homogeneous transformation matrix, denoted as H or T . The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference and projected frames. It consists of a 3x3 rotation matrix paired with our 3x1 position vector, resulting in a 3x4 matrix. A square matrix is the equal sum of the rows and columns. To make this equal and to make it 4x4 matrix, an augmentation column (0 0 0 1) is added. 
+  </p>
+<br>
+
+<p align="center"> <b>&#128512; HINDI KO NA ALAM ANG KASUNOD &#128512; </b> </p>
+
+
+<p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator</b> </p>
+  <p align="center">
+  <img src=link alt=Homogeneous-Transformation-Matrix-of-a-Spherical-Manipulator style="height: 300px;"></p>
+</div>
+<br>
+
+
+<p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=Homogeneous-Transformation-Matrix-of-a-Spherical-Manipulator-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
+
+
+## VII. Inverse Kinematics
 
 
 
