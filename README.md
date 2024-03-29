@@ -291,7 +291,78 @@
 
 ## VII. Inverse Kinematics
 
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Kinematics</i></b> is the study of how bodies move in a robotic mechanism, regardless of the forces or torques that cause the motion. It also studies the relationship between a robot's joint coordinates and its spatial organization, which is a fundamental and classical topic in robotics.
+  </p>
+<br>
 
+<div align="center">
+  
+|  Forward Kinematics  | Inverse Kinematics |
+|   ---  |   ---  |
+|  - The given inputs are the joint variables and the output is the position vector.  |  - The given is the position vector while the output is the joint variables.  |
+|  - For identifying the limits of your joint.  |  - For mimicking the motion of the human arm.  |
+|  - For obtaining the trajectory solution.  |  - For detailed positioning of the end-effector.  | 
+|  - Easier to solve.  |  - Difficult to solve.  |
+
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Forward kinematics</i></b> is the geometric problem of finding the position vector and orientation of the end effector using joint variables. It is also a technique for calculating the frames of a robot's links using a configuration and the robot's kinematic structure as input. While <b><i>Inverse kinematics</i></b> is utilized to move the mechanical manipulator. Inverse Kinematics is essentially the opposite operation: it calculates configurations to reach the desired workspace coordinate. This process is required for many robotics activities, including moving a tool along a specified path, manipulating items, and viewing situations from the correct perspective.
+  </p>
+<br>
+
+
+<p align="center"> <b>Inverse Kinematics of a Spherical Manipulator</b> </p>
+
+<div align="center">
+  
+|  Top View  | Front View |
+|   ---  |   ---  |
+|  <p align="center"> <img src=link alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px;"></p>  |  <p align="center"> <img src=link alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px;"></p>  |
+
+</div>
+<br>
+
+
+#### Summary of the Step-by-Step Process on How to Find the Inverse Kinematics of a Spherical Manipulator
+  - On the <b><i>Top View</b></i>:
+    - To solve for &Theta;<sub>1</sub>, we use the inverse tangent because Y<sup>0</sup><sub>3</sub> and X<sup>0</sup><sub>3</sub> is given.
+    - We can’t use a<sub>2</sub> + a<sub>3</sub> + d<sub>3</sub> as hypotenuse that’s why we name our hypotenuse as r<sub>1</sub>.
+  - On the <b><i>Front View</b></i>:
+      - r<sub>1</sub> is the length of the link of the prismatic joint and the end-effector that change if &Theta;<sub>2</sub> changes its orientation.
+      - Then for the new side, which is the r<sub>2</sub> to get the value of Z<sup>0</sup><sub>3</sub>, so the r<sub>2</sub> is equal to Z<sup>0</sup><sub>3</sub> - a<sub>1</sub>.
+      - To solve for &Theta;<sub>2</sub>, we can use again the inverse tangent formula.
+      - Then to solve for d<sub>3</sub>, we will use the Pythagorean Theorem.
+<br>
+
+
+
+
+
+## VIII. Forward and Inverse Kinematics (GUI calculator)
+
+<br>
+
+
+### IX. References
+-
+-
+-
+-
+-
+<hr> 
+<br>
+
+
+## X. Group Members:
+  - Alojado, Stephen Gabriel S.
+  - Apostol, Jan Benedict D.
+  - Cardenas, Sofia Bianca J.
+  - Catapang, Jamil Darrius S.
+  - Umali, Ariane Mae D.<br>
 
 
 
