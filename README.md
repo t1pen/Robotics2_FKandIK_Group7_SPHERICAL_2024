@@ -365,6 +365,7 @@ These are the following libraries used for the application:
 
 ### Tkinter Designer
 ___
+
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Tkinter is known for its old school way of creating GUI in terms of its aesthetics. <a href="https://github.com/ParthJadhav/Tkinter-Designer">Tkinter Designer</a> is a gui creator developed by <a href="https://github.com/ParthJadhav">ParthJadhav</a> to create modern GUI using a design sofware <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1350011666009633546">Figma</a>. Tkinter Designer uses the Figma API in reading the design file and generates the codes and resource files (assets) needed for the designed GUI. This still uses codes that is built in with tkinter. 
 </p>
@@ -376,6 +377,7 @@ Tkinter is known for its old school way of creating GUI in terms of its aestheti
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Even though Tkinter Designer generates the code itself, code is still needed to be modify because some resources such as fonts and element alignment are not interpreted in the code properly. Troubleshooting and debugging is necessary.  
 </p>
+<br>
 
 ### Graphical User Interface Design
 ___
@@ -392,8 +394,6 @@ The design of the Graphical User Interface focuses on a modern approach. The GUI
 - ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF` - Font Color of the GUI.
 - ![#888888](https://via.placeholder.com/15/888888/000000?text=+) `#888888` - Buttons of the GUI.
 
-<br>
-
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Figma%20Design.png?raw=true" width= 700>
 </p>
@@ -409,6 +409,7 @@ However through out the design process and coding the application, we opted to a
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Some circumstances such as the font used on the title are modified with what is available with tkinter. Otherwise, the design of the GUI was accomplished based on the user's specification.
 </p>
+<br>
 
 ### Functionality
 ___
@@ -426,6 +427,7 @@ The reset deletes all the entries present in the all entry boxes. By clicking th
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Reset_Button.gif?raw=true" width= 700>
 </p>
+<br>
 
 #### Forward Button
 
@@ -436,6 +438,7 @@ The forward button performs the forward kinematics of function of the calculator
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Forward_Button.gif?raw=true" width= 700>
 </p>
+<br>
 
 #### Inverse Button
 
@@ -446,6 +449,7 @@ Just like the forward button, this button is binded to run a function for invers
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Inverse_Button.gif?raw=true" width= 700>
 </p>
+<br>
 
 #### Recording Data
 
@@ -456,6 +460,7 @@ When obtaining the data, it is nice to runback through the obtained results of f
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif?raw=true" width= 700>
 </p>
+<br>
 
 #### Error Message Boxes
 
@@ -480,13 +485,12 @@ When entering data, it is inevitable to encounter mistakes. We designed the appl
 <p align="center">
 <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif?raw=true" width= 700>
 </p>
+<br>
 
 ### Installation
 ___
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Installation of the application can be done in two ways: <b>Installer</b>, or <b>Portable Software</b>.
-</p>
 
 #### Installer (Installation Guide)
 
@@ -506,7 +510,6 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 4. Run __Spherical_GUI.exe__ and enjoy the app.
 
 <sub>Installation Video <a href="">Here</a></sub>
-
 <br>
 
 
