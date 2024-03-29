@@ -160,7 +160,7 @@
 <br>
 
  <p align="justify"> 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Joint Variables,</i></b> are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>.A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> (&Theta;), theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as <b><i>d,</i></b> <b><i>d</i></b> is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.</p>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Joint Variables,</i></b> are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> (&Theta;), theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as <b><i>d,</i></b> <b><i>d</i></b> is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.</p>
 <br>
 
 
@@ -267,8 +267,103 @@
 
 ## VI. Homogeneous Transformation Matrix
 
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Furthermore, homogeneous transformation matrices are described as matrices that specify an object's position and orientation. 3x3 rotation matrices can be combined using multiplication. Position vectors cannot be added or multiplied. And to combine position vectors, we shall use the homogeneous transformation matrix, denoted as H or T . The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference and projected frames. It consists of a 3x3 rotation matrix paired with our 3x1 position vector, resulting in a 3x4 matrix. A square matrix is the equal sum of the rows and columns. To make this equal and to make it 4x4 matrix, an augmentation column (0 0 0 1) is added. 
+  </p>
+<br>
+
+<p align="center"> <b>&#128512; HINDI KO NA ALAM ANG KASUNOD &#128512; </b> </p>
 
 
+<p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator</b> </p>
+  <p align="center">
+  <img src=link alt=Homogeneous-Transformation-Matrix-of-a-Spherical-Manipulator style="height: 300px;"></p>
+</div>
+<br>
+
+
+<p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=Homogeneous-Transformation-Matrix-of-a-Spherical-Manipulator-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
+
+
+## VII. Inverse Kinematics
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Kinematics</i></b> is the study of how bodies move in a robotic mechanism, regardless of the forces or torques that cause the motion. It also studies the relationship between a robot's joint coordinates and its spatial organization, which is a fundamental and classical topic in robotics.
+  </p>
+<br>
+
+<div align="center">
+  
+|  Forward Kinematics  | Inverse Kinematics |
+|   ---  |   ---  |
+|  - The given inputs are the joint variables and the output is the position vector.  |  - The given is the position vector while the output is the joint variables.  |
+|  - For identifying the limits of your joint.  |  - For mimicking the motion of the human arm.  |
+|  - For obtaining the trajectory solution.  |  - For detailed positioning of the end-effector.  | 
+|  - Easier to solve.  |  - Difficult to solve.  |
+
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Forward kinematics</i></b> is the geometric problem of finding the position vector and orientation of the end effector using joint variables. It is also a technique for calculating the frames of a robot's links using a configuration and the robot's kinematic structure as input. While <b><i>Inverse kinematics</i></b> is utilized to move the mechanical manipulator. Inverse Kinematics is essentially the opposite operation: it calculates configurations to reach the desired workspace coordinate. This process is required for many robotics activities, including moving a tool along a specified path, manipulating items, and viewing situations from the correct perspective.
+  </p>
+<br>
+
+
+<p align="center"> <b>Inverse Kinematics of a Spherical Manipulator</b> </p>
+
+<div align="center">
+  
+|  Top View  | Front View |
+|   ---  |   ---  |
+|  <p align="center"> <img src=link alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px;"></p>  |  <p align="center"> <img src=link alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px;"></p>  |
+
+</div>
+<br>
+
+
+#### Summary of the Step-by-Step Process on How to Find the Inverse Kinematics of a Spherical Manipulator
+  - On the <b><i>Top View</b></i>:
+    - To solve for &Theta;<sub>1</sub>, we use the inverse tangent because Y<sup>0</sup><sub>3</sub> and X<sup>0</sup><sub>3</sub> is given.
+    - We can’t use a<sub>2</sub> + a<sub>3</sub> + d<sub>3</sub> as hypotenuse that’s why we name our hypotenuse as r<sub>1</sub>.
+  - On the <b><i>Front View</b></i>:
+      - r<sub>1</sub> is the length of the link of the prismatic joint and the end-effector that change if &Theta;<sub>2</sub> changes its orientation.
+      - Then for the new side, which is the r<sub>2</sub> to get the value of Z<sup>0</sup><sub>3</sub>, so the r<sub>2</sub> is equal to Z<sup>0</sup><sub>3</sub> - a<sub>1</sub>.
+      - To solve for &Theta;<sub>2</sub>, we can use again the inverse tangent formula.
+      - Then to solve for d<sub>3</sub>, we will use the Pythagorean Theorem.
+<br>
+
+
+
+
+
+## VIII. Forward and Inverse Kinematics (GUI calculator)
+
+<br>
+
+
+## IX. References
+-
+-
+-
+-
+-
+<hr> 
+<br>
+
+
+
+## Group Members:
+- Alojado, Stephen Gabriel S.
+- Apostol, Jan Benedict D.
+- Cardenas, Sofia Bianca J.
+- Catapang, Jamil Darrius S.
+- Umali, Ariane Mae D.
 
 
 
