@@ -241,7 +241,7 @@
 
 <div align="center">
   
-| $\theta$ | $\alpha$ | $r$ | $d$ |
+| $\theta$ | $\alpha$ | $d$ | $r$ |
 |     :---:     |     :---:     |     :---:    |     :---:     
 |  " $\theta$ " is the rotation around $z_{n-1}$ that is required to get $x_{n-1}$ to match $x_{n}$, with the joint variable theta if the joint is a revolute or twisting joint.  |   " $\alpha$ " is the rotation around $x_{n}$ that is required to match $z_{n-1}$ to $z_{n}$.  |  " $d$ " is the distance from the origin of $n-1$ and $n$ frames along the $z_{n-1}$ direction with the joint variable if the joint is prismatic.  |  " $r$ " is the distance from the origin of $n-1$ and $n$ frames along the $x_{n}$ direction.  |
 
