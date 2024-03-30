@@ -1,4 +1,4 @@
-# Robotics2_FKandIK_Group7_SPHERICAL_2024
+<h1 align="center">Robotics 2: Forward and Inverse Kinematics of a Spherical Manipulator</h1>
 <br>
 
 ## Table of Contents
@@ -11,7 +11,7 @@
   - [VII. Inverse Kinematics](#vii-inverse-kinematics)
   - [VIII. Forward and Inverse Kinematics Calculator (Application)](#viii-forward-and-inverse-kinematics-calculator-application)
   - [IX. References](#ix-references)
-  - [X. Group Members](#x-members)
+  - [X. Group Members](#x-group-members)
 <hr> 
 <br>
 
@@ -522,7 +522,7 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 
 
 
-## Group Members:
+## X. Group Members:
 - Alojado, Stephen Gabriel S.
 - Apostol, Jan Benedict D.
 - Cardenas, Sofia Bianca J.
