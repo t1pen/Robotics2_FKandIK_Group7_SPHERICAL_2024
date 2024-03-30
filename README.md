@@ -21,7 +21,6 @@
 <hr> 
 <br>
 
-
 ## II. Introduction
 
   <p align="center">
@@ -265,12 +264,45 @@
 
 ## VI. Homogeneous Transformation Matrix
 
- <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Furthermore, homogeneous transformation matrices are described as matrices that specify an object's position and orientation. 3x3 rotation matrices can be combined using multiplication. Position vectors cannot be added or multiplied. And to combine position vectors, we shall use the homogeneous transformation matrix, denoted as H or T . The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference and projected frames. It consists of a 3x3 rotation matrix paired with our 3x1 position vector, resulting in a 3x4 matrix. A square matrix is the equal sum of the rows and columns. To make this equal and to make it 4x4 matrix, an augmentation column (0 0 0 1) is added. 
-  </p>
+<p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Homogeneous transformation matrices are described as matrices that specify an object's position and orientation. Rotation matrices can be combined using multiplication while Position vectors cannot be added or multiplied. In order to combine position vectors, we shall use the homogeneous transformation matrix denoted as $H_{n}^{n-1}$ or $T_{n}^{n-1}$. The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference frame and projected frame. It is obtained by concatenating 3x3 rotation matrix and 3x1 position vector, resulting in a 3x4 matrix. However, a square matrix is required thus adding an augmentation row is added at the bottom. 
+</p>
+
+$$
+H_{n}^{n-1} =
+\begin{bmatrix}
+\ Rotation \ (3\times3) & Position \ (3\times1)\\\
+0  \ \ \ \ \ \ 0 \ \ \ \ \ \ 0 & 1
+\end{bmatrix}
+$$
 <br>
 
-<p align="center"> <b>&#128512; HINDI KO NA ALAM ANG KASUNOD &#128512; </b> </p>
+
+
+
+$$\begin{aligned}
+H_{n}^{n-1} = 
+\begin{bmatrix} 
+  cos\theta_{n} & -sin\theta_{n}cos\alpha_{n} & sin\theta_{n} sin\alpha_{n} & r_{n}cos\theta_{n} 
+  \\
+  sin\theta_{n} & cos\theta_{n}cos\alpha_{n} & -cos\theta_{n}sin\alpha_{n} & r_{n}sin\theta_{n} 
+  \\
+  0 & sin\alpha_{n} & cos\alpha_{n} & d_{n} 
+  \\
+  0 & 0 & 0 & 1 
+\end{bmatrix} 
+&& or &&
+H_{n}^{n-1} = 
+\begin{bmatrix} 
+  c\theta_{n} & -s\theta_{n}c\alpha_{n} & s\theta_{n} s\alpha_{n} & r_{n}c\theta_{n} 
+  \\
+  s\theta_{n} & c\theta_{n}c\alpha_{n} &  -c\theta_{n}s\alpha_{n} & r_{n}s\theta_{n}
+  \\
+  0 & s\alpha_{n} & c\alpha_{n} & d_{n}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+\end{aligned}$$
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator</b> </p>
