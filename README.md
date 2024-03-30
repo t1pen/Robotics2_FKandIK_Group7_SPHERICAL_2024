@@ -231,7 +231,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 
 
  <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The <b><i>Four Parameters</i></b> in the D-H Parametric are  &Theta;, &alpha; r and d. The &Theta; and the &alpha are the rotation or orientation parameters and their units are in degrees or radian. While d and r are the position or translation parameters and their units are in units of length.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The <b><i>Four Parameters</i></b> in the D-H Parametric are  $&theta;$, $&alpha;$ $r$ and $d$. The $&theta;$ and the $&alpha;$ are the rotation or orientation parameters and their units are in degrees or radian. While $d$ and $r$ are the position or translation parameters and their units are in units of length.
   </p>
 <br>
 
