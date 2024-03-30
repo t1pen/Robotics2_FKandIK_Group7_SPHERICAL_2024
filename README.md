@@ -1,4 +1,4 @@
-# Robotics2_FKandIK_Group7_SPHERICAL_2024
+<h1 align="center">Robotics 2: Forward and Inverse Kinematics of a Spherical Manipulator</h1>
 <br>
 
 ## Table of Contents
@@ -11,7 +11,7 @@
   - [VII. Inverse Kinematics](#vii-inverse-kinematics)
   - [VIII. Forward and Inverse Kinematics Calculator (Application)](#viii-forward-and-inverse-kinematics-calculator-application)
   - [IX. References](#ix-references)
-  - [X. Group Members](#x-members)
+  - [X. Group Members](#x-group-members)
 <hr> 
 <br>
 
@@ -20,7 +20,6 @@
     (description)
 <hr> 
 <br>
-
 
 ## II. Introduction
 
@@ -45,7 +44,6 @@
 - **Extension**: The robot's arm can extend or retract, moving closer to or farther from the base.
 
 <br>
-
 
 
 
@@ -152,7 +150,7 @@
   <p align="justify"> 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Links</i></b> are the rigid parts of the mechanical manipulator. A link is defined as a single part that can be a resistant body or a composite of resistant bodies with inflexible connections and relative motion in relation to other machine components. Also, joints are considered links and the values are constant:</p>
     
-  - If it is revolute or twisting, links are drawn from the center of the rotation. </p>
+  - If it is revolute or twisting, links are drawn from the center of the rotation.
   - If it is prismatic, either linear or orthogonal, links are drawn from the center of translation.
   - If it is from base, links are drawn from the center of gravity.
     
@@ -242,7 +240,7 @@
 
 <div align="center">
   
-| $\theta$ | $\alpha$ | $r$ | $d$ |
+| $\theta$ | $\alpha$ | $d$ | $r$ |
 |     :---:     |     :---:     |     :---:    |     :---:     
 |  " $\theta$ " is the rotation around $z_{n-1}$ that is required to get $x_{n-1}$ to match $x_{n}$, with the joint variable theta if the joint is a revolute or twisting joint.  |   " $\alpha$ " is the rotation around $x_{n}$ that is required to match $z_{n-1}$ to $z_{n}$.  |  " $d$ " is the distance from the origin of $n-1$ and $n$ frames along the $z_{n-1}$ direction with the joint variable if the joint is prismatic.  |  " $r$ " is the distance from the origin of $n-1$ and $n$ frames along the $x_{n}$ direction.  |
 
@@ -266,12 +264,47 @@
 
 ## VI. Homogeneous Transformation Matrix
 
- <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Furthermore, homogeneous transformation matrices are described as matrices that specify an object's position and orientation. 3x3 rotation matrices can be combined using multiplication. Position vectors cannot be added or multiplied. And to combine position vectors, we shall use the homogeneous transformation matrix, denoted as H or T . The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference and projected frames. It consists of a 3x3 rotation matrix paired with our 3x1 position vector, resulting in a 3x4 matrix. A square matrix is the equal sum of the rows and columns. To make this equal and to make it 4x4 matrix, an augmentation column (0 0 0 1) is added. 
-  </p>
+<p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Homogeneous transformation matrices are described as matrices that specify an object's position and orientation. Rotation matrices can be combined using multiplication while Position vectors cannot be added or multiplied. In order to combine position vectors, we shall use the homogeneous transformation matrix denoted as $H_{n}^{n-1}$ or $T_{n}^{n-1}$. The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference frame and projected frame. It is obtained by concatenating 3x3 rotation matrix and 3x1 position vector, resulting in a 3x4 matrix. However, a square matrix is required thus adding an augmentation row is added at the bottom. 
+</p>
+
+$$
+H_{n}^{n-1} =
+\begin{bmatrix}
+\ Rotation \ (3\times3) & Position \ (3\times1)\\\
+0  \ \ \ \ \ \ \ \ \ \ 0 \ \ \ \ \ \ \ \ \ \ \ 0 & 1
+\end{bmatrix}
+$$
 <br>
 
-<p align="center"> <b>&#128512; HINDI KO NA ALAM ANG KASUNOD &#128512; </b> </p>
+
+
+
+
+
+$$\begin{aligned}
+H_{n}^{n-1} = 
+\begin{bmatrix} 
+  cos\theta_{n} & -sin\theta_{n}cos\alpha_{n} & sin\theta_{n} sin\alpha_{n} & r_{n}cos\theta_{n} 
+  \\
+  sin\theta_{n} & cos\theta_{n}cos\alpha_{n} & -cos\theta_{n}sin\alpha_{n} & r_{n}sin\theta_{n} 
+  \\
+  0 & sin\alpha_{n} & cos\alpha_{n} & d_{n} 
+  \\
+  0 & 0 & 0 & 1 
+\end{bmatrix} 
+&& or &&
+H_{n}^{n-1} = 
+\begin{bmatrix} 
+  c\theta_{n} & -s\theta_{n}c\alpha_{n} & s\theta_{n} s\alpha_{n} & r_{n}c\theta_{n} 
+  \\
+  s\theta_{n} & c\theta_{n}c\alpha_{n} &  -c\theta_{n}s\alpha_{n} & r_{n}s\theta_{n}
+  \\
+  0 & s\alpha_{n} & c\alpha_{n} & d_{n}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+\end{aligned}$$
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator</b> </p>
@@ -359,7 +392,7 @@ These are the following libraries used for the application:
 - [`pyinstaller`](https://pyinstaller.org/en/stable/) This is used to convert the Python files to an Executable file that allows the application to run to other devices without the necessity to installation of libraries and Python.
 
 - [`auto-py-to-exe`](https://pypi.org/project/auto-py-to-exe/) This library is a .py to .exe converter that uses a simple graphical interface and PyInstaller instead of converting the python file in a terminal.
-
+<br>
 
 
 ### Tkinter Designer
@@ -523,15 +556,12 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 
 
 
-## Group Members:
+## X. Group Members:
 - Alojado, Stephen Gabriel S.
 - Apostol, Jan Benedict D.
 - Cardenas, Sofia Bianca J.
 - Catapang, Jamil Darrius S.
 - Umali, Ariane Mae D.
-
-
-
 
 
 
