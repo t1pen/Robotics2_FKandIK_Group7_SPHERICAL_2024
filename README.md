@@ -272,10 +272,12 @@ $$
 H_{n}^{n-1} =
 \begin{bmatrix}
 \ Rotation \ (3\times3) & Position \ (3\times1)\\\
-0  \ \ \ \ \ \ 0 \ \ \ \ \ \ 0 & 1
+0  \ \ \ \ \ \ \ \ \ \ 0 \ \ \ \ \ \ \ \ \ \ \ 0 & 1
 \end{bmatrix}
 $$
 <br>
+
+
 
 
 
