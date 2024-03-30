@@ -120,7 +120,6 @@
 ## IV. Kinematic Diagram and D-H Frame
   <p align="center">
   <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
-  <p align="center"> Figure 2. Kinematic Diagram of a Spherical Manipulator </p>
   </div>
 <br>
 
@@ -167,7 +166,6 @@ ___
 
  <p align="justify"> 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>D-H Notation</i></b> was introduced by <b>Jacques Denavit</b> and <b>Richard Hartenberg</b> in <b>1955</b> in order to standardize the coordinate frames for spatial linkages. D-H notation is used to solve the forward kinematics of a mechanical manipulator. The <b><i>Frames</i></b> in a Mechanical Manipulator are used to determine where they are and where they need to go. It also shows the movement of our mechanical manipulator. The frames are positioned at each part of the mechanical manipulator, including the base, joints, and end effector.</p>
-<br>
 
 #### Three Types of Frames used in Mechanical Manipulator:
   - Base (World) Frame
@@ -187,10 +185,10 @@ ___
 ### Applying D-H Frame Rules to the Kinematic Diagram of a Spherical Manipulator
 ___
 
-  <p align="center">
+<p align="center">
   <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/d7c3f33c-a251-41f5-a656-f15b2fae8357"
 " style="height: 300px;"></p>
-<p align="center"> Figure 3. Kinematic Diagram and D-H Frame of a Spherical Manipulator </p>
+
 </div>
 <br>
 
