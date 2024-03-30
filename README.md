@@ -1,4 +1,4 @@
-![Kinematic Diagram with DH Frame Assignments and DH Parameters](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/25a6482a-0427-4ad8-8d7a-d87b2d899854)<h1 align="center">Robotics 2: Forward and Inverse Kinematics of a Spherical Manipulator</h1>
+<h1 align="center">Robotics 2: Forward and Inverse Kinematics of a Spherical Manipulator</h1>
 <br>
 
 ## Table of Contents
