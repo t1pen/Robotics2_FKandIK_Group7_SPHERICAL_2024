@@ -545,7 +545,7 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 - Agnihotri, N. (2023, June 29). Understanding the degree of freedom in robots. Engineers Garage. https://www.engineersgarage.com/understanding-the-degree-of-freedom-in-robots/
 - What is a kinematic diagram, and how does it help in understanding the motion of mechanisms? (n.d.). https://www.proprep.com/questions/what-is-a-kinematic-diagram-and-how-does-it-help-in-understanding-the-motion-of-mechanisms
 - Lab, D. (2021, September 30). Kinematics in Robotics. https://www.linkedin.com/pulse/kinematics-robotics-decibelslab
--
+- Automaticaddison, A. (2020, August 26). Find Homogeneous Transformation Matrices for a Robotic Arm – Automatic Addison. https://automaticaddison.com/find-homogeneous-transformation-matrices-for-a-robotic-arm/#:~:text=Homogeneous%20transformation%20matrices%20combine%20both,frame%200%20to%20frame%202
 <hr> 
 <br>
 
