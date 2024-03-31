@@ -276,10 +276,6 @@ $$
 <br>
 
 
-
-
-
-
 $$\begin{aligned}
 H_{n}^{n-1} = 
 \begin{bmatrix} 
