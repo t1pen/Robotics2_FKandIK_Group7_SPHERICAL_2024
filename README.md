@@ -364,6 +364,8 @@ H_{n}^{n-1} =
       - Then to solve for $d_{3}$, we will use the Pythagorean Theorem.
 <br>
 
+
+
 ## VIII. Forward and Inverse Kinematics Calculator (Application)
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
