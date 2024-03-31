@@ -541,7 +541,7 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 
 
 ## IX. References
--
+- Polar/Spherical Robots. (2022, May 13). Midwest Engineered Systems. https://www.mwes.com/types-of-industrial-robots/polar-spherical-robots/
 -
 -
 -
