@@ -363,6 +363,19 @@ $$
 
 <br>
 
+$$
+H_{2}^{1} =
+\begin{bmatrix} 
+  -\theta_{2} & 0 & c\theta_{2} & 0 
+  \\
+  c\theta_{2} & 0 & s\theta_{2} & 0
+  \\
+  0 & 1 & 0 & 0
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
   <p align="center">
