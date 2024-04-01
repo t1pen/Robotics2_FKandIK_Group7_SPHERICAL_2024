@@ -345,8 +345,23 @@ H_{n}^{n-1} =
   0 & 0 & 0 & 1
 \end{bmatrix}
 $$
+
 <br>
 
+$$
+H_{1}^{0} =
+\begin{bmatrix} 
+  c\theta_{1} & 0 & s\theta_{1} & 0 
+  \\
+  s\theta_{1} & 0 & -c\theta_{1} & 0
+  \\
+  0 & 1 & 0 & a_{1}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
