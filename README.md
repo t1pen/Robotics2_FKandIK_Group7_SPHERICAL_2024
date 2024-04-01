@@ -103,7 +103,7 @@
 <br>
 
 
-#### Spherical Manipulator Degrees of Freedom (DOF) Computation:
+### Spherical Manipulator Degrees of Freedom (DOF) Computation:
 
 <div align="center">
   
@@ -253,7 +253,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 <br>
 
 
-#### D-H Parametric Table for a Spherical Manipulator
+### D-H Parametric Table for a Spherical Manipulator
 ___
 
 <p align="center">
