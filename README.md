@@ -357,7 +357,8 @@ H_{n}^{n-1} =
 <br>
 
 
-<p align="center"> <b>Inverse Kinematics of a Spherical Manipulator</b> </p>
+### Inverse Kinematics of a Spherical Manipulator using Graphical Method
+___
 
 <div align="center">
   
