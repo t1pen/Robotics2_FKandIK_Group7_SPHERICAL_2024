@@ -385,7 +385,27 @@ H_{3}^{2} =
   \\
   0 & 1 & 0 & 0
   \\
-  0 & 0 & 1 & a_{2}+d_{2}+d_{3}
+  0 & 0 & 1 & a_{2}+a_{3}+d_{3}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
+
+<p align="justify"> 
+   Multiplying all this togrther, we get:
+</p>
+
+$$
+H_{3}^{0} =
+H_{1}^{0} H_{2}^{1} H_{2}^{3}  
+\begin{bmatrix} 
+  -c\theta_{1}s\theta_{2} & s\theta_{1} & c\theta_{1}c\theta_{2} & c\theta_{1}c\theta_{2}(a_{2}+a_{3}+d_{3})
+  \\
+  -s\theta_{1}s\theta_{2} & -c\theta_{1} &  s\theta_{1}c\theta_{2} & s\theta_{1}c\theta_{2}(a_{2}+a_{3}+d_{3})
+  \\
+  -c\theta_{2} & 0 & s\theta_{2} & a_{1}+s\theta_{1}(a_{2}+a_{3}+d_{3})
   \\
   0 & 0 & 0 & 1
 \end{bmatrix}
