@@ -194,9 +194,7 @@ ___
 ___
 
 <p align="center">
-  <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png"
-" style="height: 300px;"></p>
-
+  <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png" style="height: 300px;"></p>
 </div>
 <br>
 
@@ -447,6 +445,12 @@ $$
 
 ### Inverse Kinematics of a Spherical Manipulator using Graphical Method
 ___
+
+<p align="center">
+  <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png" style="height: 300px;"></p>
+</div>
+<p align="center"> Kinematic Diagram with D-H Frame of a Spherical Manipulator </p>
+
 
 <div align="center">
   
