@@ -399,7 +399,7 @@ $$
 
 $$
 H_{3}^{0} =
-H_{1}^{0} H_{2}^{1} H_{2}^{3}  
+H_{1}^{0} \ H_{2}^{1} \ H_{3}^{2}  
 \begin{bmatrix} 
   -c\theta_{1}s\theta_{2} & s\theta_{1} & c\theta_{1}c\theta_{2} & c\theta_{1}c\theta_{2}(a_{2}+a_{3}+d_{3})
   \\
