@@ -104,6 +104,7 @@
 
 
 ### Spherical Manipulator Degrees of Freedom (DOF) Computation:
+___
 
 <div align="center">
   
