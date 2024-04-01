@@ -279,8 +279,9 @@ ___
 ## VI. Homogeneous Transformation Matrix
 
 <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Homogeneous transformation matrices are described as matrices that specify an object's position and orientation. Rotation matrices can be combined using multiplication while Position vectors cannot be added or multiplied. In order to combine position vectors, we shall use the homogeneous transformation matrix denoted as $H_{n}^{n-1}$ or $T_{n}^{n-1}$. The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference frame and projected frame. It is obtained by concatenating 3x3 rotation matrix and 3x1 position vector, resulting in a 3x4 matrix. However, a square matrix is required thus adding an augmentation row is added at the bottom. 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous Transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Homogeneous transformation matrices are described as matrices that specify an object's position and orientation. Rotation matrices can be combined using multiplication while Position vectors cannot be added or multiplied. In order to combine position vectors, we shall use the homogeneous transformation matrix denoted as $H_{n}^{n-1}$ or $T_{n}^{n-1}$. The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference frame and projected frame. It is obtained by concatenating 3x3 rotation matrix and 3x1 position vector, resulting in a 3x4 matrix. However, a square matrix is required thus adding an augmentation row is added at the bottom. 
 </p>
+<br>
 
 $$
 H_{n}^{n-1} =
@@ -316,12 +317,36 @@ H_{n}^{n-1} =
 \end{bmatrix}
 \end{aligned}$$
 
-
-<p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator</b> </p>
-  <p align="center">
-  <img src=link alt=Homogeneous-Transformation-Matrix-of-a-Spherical-Manipulator style="height: 300px;"></p>
-</div>
 <br>
+<br>
+
+
+### Homogeneous Transformation Matrix of a Spherical Manipulator
+___
+
+
+<p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To get the  <b><i>Homogeneous Transformation Matrix</i></b> of the spherical manipulator, we can use the Homogeneous Transformation Matrix formula as well as the D-H Parametric Table that we have already derived.
+</p>
+<br>
+
+<p align="center"> <b>Homogeneous Transformation Matrix Formula</b> </p>
+
+$$
+T_{n}^{n-1} =
+H_{n}^{n-1} =
+\begin{bmatrix} 
+  c\theta_{n} & -s\theta_{n}c\alpha_{n} & s\theta_{n} s\alpha_{n} & r_{n}c\theta_{n} 
+  \\
+  s\theta_{n} & c\theta_{n}c\alpha_{n} &  -c\theta_{n}s\alpha_{n} & r_{n}s\theta_{n}
+  \\
+  0 & s\alpha_{n} & c\alpha_{n} & d_{n}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+<br>
+
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
