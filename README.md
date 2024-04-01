@@ -366,11 +366,26 @@ $$
 $$
 H_{2}^{1} =
 \begin{bmatrix} 
-  -\theta_{2} & 0 & c\theta_{2} & 0 
+  -s\theta_{2} & 0 & c\theta_{2} & 0 
   \\
   c\theta_{2} & 0 & s\theta_{2} & 0
   \\
   0 & 1 & 0 & 0
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
+
+$$
+H_{3}^{2} =
+\begin{bmatrix} 
+  1 & 0 & 0 & 0 
+  \\
+  0 & 1 & 0 & 0
+  \\
+  0 & 0 & 1 & a_{2}+d_{2}+d_{3}
   \\
   0 & 0 & 0 & 1
 \end{bmatrix}
