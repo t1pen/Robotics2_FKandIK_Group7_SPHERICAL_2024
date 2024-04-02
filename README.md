@@ -442,7 +442,54 @@ ___
 <br>
 
 
-<p align="center"> <b>Inverse Kinematics using Graphical Method</b> </p>
+#### Inverse Kinematics using Graphical Method
+<p align="center"> <b>Top View</b> </p>
+<br>
+  
+<p align="center">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: left;">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: right;">
+</p>
+<br>
+      
+To solve for $\theta_{1}$, use sohcahtoa;
+  - tan $\theta_{1}=$ adjacent/hypotenuse
+  - opposite = $Y_{3}^{0}$ <br>
+  - adjacent = $X_{3}^{0}$
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, the hypotenuse is changing its length due to $d_{3}$ since it is a prismatic joint as well as because of the joint 2 being a revolute joint and so, it can change its orientation hence, we will give a new name for our hypotenuse, in this case, $r_{1}$. So from the equation 1, we can now derive the formula for $r_{1}$.
+<br>
+<br>
+
+<p align="center"> <b>Front View</b> </p>
+<br>
+  
+<p align="center">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: left;">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: right;">
+</p>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And now in terms of the front view of the spherical manipulator, the $r_{1}$ will now be the adjacent length or side of $\theta_{2}$. After placing the $r_{1}$, it can be noticed that we now have a right triangle with the $a_{2}+a_{3}+d_{3}$ being the hypotenuse. However we can’t use the $Z$ as the opposite side of our triangle thus, we will make a another line that would represent the opposite length of  $\theta_{2}$ and we will call it as $r_{2}$. 
+
+Based on the illustration above, we can derive that,
+  - $Z = a_{1}$ + $r_{2}$ therefore,
+  - $r_{2} =  Z - a_{1}$  eq. 3 
+
+And so, we can now derive for the formula of  $\theta_{2}$ using again the sohcahtoa;
+  - $tan\theta_{2} = opposite/adjacent$
+  - $opposite = r_{2}$
+  - $adjacent = r_{1}$
+  - $\theta_{2}$ $=$ $\theta^{-1} (r_{2} / r_{1})$   eq. 4
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, to find the joint variable d_{3}, the Pythagorean theorem is used;
+  - $c_{2} = a_{2} + b_{2}$
+  - $( a_{2}+a_{3}+d_{3})^{2} ) = r_{1}^{2} + r_{2}^{2}$
+  - $a_{2}+a_{3}+d_{3})^{2} = r_{1}^{2} + r_{2}^{2}$
+  - $d_{3} = r_{1}^{2} + r_{2}^{2} - a^{2} - a^{3}$   eq. 5
+<br>
+<br>
 
 
 <div align="center">
