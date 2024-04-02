@@ -278,6 +278,7 @@ ___
 </p>
 <br>
 
+<p align="center"> <b>Homogeneous Transformation Matrix Formula</b> </p>
 $$
 H_{n}^{n-1} =
 \begin{bmatrix}
