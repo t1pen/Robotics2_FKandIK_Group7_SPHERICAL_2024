@@ -327,7 +327,6 @@ ___
 
 #### Obtaining the Homogeneous Transformation Matrix Formula Computed Method
   - To obtain $H_{1}^{0}$, concatenate the rotation matrix $r_{1}^{0}$ and the position vector $r_{1}^{0}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
-
 $$
 H_{1}^{0} =
 \begin{bmatrix} 
@@ -340,11 +339,9 @@ H_{1}^{0} =
   0 & 0 & 0 & 1
 \end{bmatrix}
 $$
-
-  - Same as the previous matrix, to get the $H_{2}^{1}$, concatenate the rotation matrix $r_{2}^{1}$ and position vector $p_{2}^{1}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below. 
-
 <br>
 
+  - Same as the previous matrix, to get the $H_{2}^{1}$, concatenate the rotation matrix $r_{2}^{1}$ and position vector $p_{2}^{1}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below. 
 $$
 H_{2}^{1} =
 \begin{bmatrix} 
@@ -357,11 +354,9 @@ H_{2}^{1} =
   0 & 0 & 0 & 1
 \end{bmatrix}
 $$
-
 <br>
 
   - Lastly, to obtain $H_{3}^{2}$, concatenate the rotation matrix $r_{3}^{2}$ and the position vector $p_{3}^{2}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
-
 $$
 H_{3}^{2} =
 \begin{bmatrix} 
@@ -374,11 +369,9 @@ H_{3}^{2} =
   0 & 0 & 0 & 1
 \end{bmatrix}
 $$
-
 <br>
 
   - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices H_{1}^{0}, H_{2}^{1}, and H_{3}^{2} together. Then we can obtain: 
-
 $$
 H_{3}^{0} =
 H_{1}^{0} \ H_{2}^{1} \ H_{3}^{2}  
@@ -392,7 +385,7 @@ H_{1}^{0} \ H_{2}^{1} \ H_{3}^{2}
   0 & 0 & 0 & 1
 \end{bmatrix}
 $$
-
+<br>
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
