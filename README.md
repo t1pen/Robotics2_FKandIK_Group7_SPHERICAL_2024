@@ -321,7 +321,7 @@ ___
 
 
 <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to obtain the Homogeneous Transformation Matrix, manual computation and by using the D-H Parametric Table.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to obtain the Homogeneous Transformation Matrix, by manual computation and using the D-H Parametric Table.
 </p>
 <br>
 
@@ -394,6 +394,7 @@ H_{1}^{0} \ H_{2}^{1} \ H_{3}^{2}
 $$
 
 <br>
+
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
