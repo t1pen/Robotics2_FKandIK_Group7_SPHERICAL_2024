@@ -119,7 +119,8 @@ ___
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The illustration above is a simplified diagram of an RRP Spherical Manipulator. It is also shown above the written computation to get the Degrees of Freedom of Spherical Manipulator. Furthermore, a Spherical Manipulator is a robot or manipulator with two rotational joints and one prismatic joint and it is commonly used on industries that involves material handling and welding. Meanwhile, Degrees of Freedom, as discussed in our classes, is the minimum number of independent parameters or variables or coordinates required to fully describe a system. To get the degrees of freedom for spherical manipulator, the Grubler’s Criterion for Mobility or DOF of Spatial Manipulator is used as the spherical manipulator is a type of spatial manipulator. Based on the computations above, it can be concluded that this spherical manipulator is an Under-Actuated Spatial Manipulator with three degrees of freedom. 
 </p>
 <br>
-
+<div align="center">
+https://drive.google.com/file/d/1qernG_1zwdIMdKltCQkj4_gnRBKKr9h8/view?usp=drivesdk
 
 
 ## IV. Kinematic Diagram and D-H Frame
