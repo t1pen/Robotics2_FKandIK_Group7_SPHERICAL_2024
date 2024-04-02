@@ -1,6 +1,7 @@
 <h1 align="center">Robotics 2: Forward and Inverse Kinematics of a Spherical Manipulator</h1>
 <br>
 
+
 ## Table of Contents
   - [I. Abstract](#i-abstract)
   - [II. Introduction](#ii-introduction)
