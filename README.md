@@ -120,8 +120,6 @@ ___
 </p>
 <br>
 
-
-
 ## IV. Kinematic Diagram and D-H Frame
   <p align="center">
   <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
@@ -255,7 +253,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 ___
 
 <p align="center">
-  <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/d7c3f33c-a251-41f5-a656-f15b2fae8357"
+  <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/Kinematic%20Diagram%20with%20DH%20Frame%20Assignments%20and%20DH%20Parameters.png?raw=true"
 " style="height: 300px;"></p>
 </div>
 <br>
@@ -323,27 +321,12 @@ ___
 
 
 <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To get the  <b><i>Homogeneous Transformation Matrix</i></b> of the spherical manipulator, we can use the Homogeneous Transformation Matrix formula as well as the D-H Parametric Table that we have already derived.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to obtain the Homogeneous Transformation Matrix, manual computation and by using the D-H Parametric Table.
 </p>
 <br>
 
-<p align="center"> <b>Homogeneous Transformation Matrix Formula</b> </p>
-
-$$
-T_{n}^{n-1} =
-H_{n}^{n-1} =
-\begin{bmatrix} 
-  c\theta_{n} & -s\theta_{n}c\alpha_{n} & s\theta_{n} s\alpha_{n} & r_{n}c\theta_{n} 
-  \\
-  s\theta_{n} & c\theta_{n}c\alpha_{n} &  -c\theta_{n}s\alpha_{n} & r_{n}s\theta_{n}
-  \\
-  0 & s\alpha_{n} & c\alpha_{n} & d_{n}
-  \\
-  0 & 0 & 0 & 1
-\end{bmatrix}
-$$
-
-<br>
+#### Obtaining the Homogeneous Transformation Matrix Formula Computed Method
+  - To obtain $H_{1}^{0}$, concatenate the rotation matrix $r_{1}^{0}$ and the position vector $r_{1}^{0}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
 
 $$
 H_{1}^{0} =
@@ -360,6 +343,8 @@ $$
 
 <br>
 
+  - Same as the previous matrix, to get the $H_{2}^{1}$, concatenate the rotation matrix $r_{2}^{1}$ and position vector $p_{2}^{1}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below. 
+
 $$
 H_{2}^{1} =
 \begin{bmatrix} 
@@ -374,6 +359,8 @@ H_{2}^{1} =
 $$
 
 <br>
+
+  - Lastly, to obtain $H_{3}^{2}$, concatenate the rotation matrix $r_{3}^{2}$ and the position vector $p_{3}^{2}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
 
 $$
 H_{3}^{2} =
@@ -390,9 +377,7 @@ $$
 
 <br>
 
-<p align="justify"> 
-   Multiplying all this togrther, we get:
-</p>
+  - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices H_{1}^{0}, H_{2}^{1}, and H_{3}^{2} together. Then we can obtain: 
 
 $$
 H_{3}^{0} =
@@ -407,6 +392,8 @@ H_{1}^{0} \ H_{2}^{1} \ H_{3}^{2}
   0 & 0 & 0 & 1
 \end{bmatrix}
 $$
+
+<br>
 
 
 <p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
@@ -594,9 +581,19 @@ When obtaining the data, it is nice to runback through the obtained results of f
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif" width= 700>
 </p>
 <br>
+
+#### View Excel File
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+As the data from previous session can be recorded, we created a button that is linked to access the excel file where all data are stored. Sheets for forward kinematics data is separated to the inverse kinematics formula. Additionally we add timestamp to better track the desired results.
+<p>
+
+<center>
+  <img sr="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/View_Excel.gif" width= 700>
+</center>
 
 #### Error Message Boxes
 
@@ -607,19 +604,19 @@ When entering data, it is inevitable to encounter mistakes. We designed the appl
 - __Please fill all required fields__ - this error will be encountered if the required entry boxes for either forward or inverse are not filled. 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif" width= 700>
 </p>
 
 - __Invalid Input__ - this error will be encountered when a non float value is detected in on the entry boxes. It will be prompt 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif" width= 700>
 </p>
 
 - __Undefined__ - this error occurs when ``ZeroDivisionError`` occured on the inverse kinematics computation. These is due to the [Formula #1]() of the inverse kinematics computation. 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif" width= 700>
 </p>
 <br>
 
