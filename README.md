@@ -439,13 +439,18 @@ ___
   <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png" style="height: 300px;"></p>
 </div>
 <p align="center"> Kinematic Diagram with D-H Frame of a Spherical Manipulator </p>
+<br>
+
+
+<p align="center"> <b>Inverse Kinematics using Graphical Method</b> </p>
 
 
 <div align="center">
   
-|  Top View  | Front View |
+|  Top View  | Process |
 |   ---  |   ---  |
-|  <p align="center"> <img src=link alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px;"></p>  |  <p align="center"> <img src=link alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px;"></p>  |
+|  <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1200px"></p>  |  To solve for $\theta_{1}$, use sohcahtoa;<br>  &nbsp;&nbsp;&nbsp;&nbsp;tan $\theta_{1}=$ adjacent/hypotenuse<br>  &nbsp;&nbsp;&nbsp;&nbsp;opposite = $Y_{3}^{0}$ <br>  &nbsp;&nbsp;&nbsp;&nbsp;adjacent = $X_{3}^{0}$  |
+|  <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1200px"></p>  |  However, the hypotenuse is changing its length due to $d_{3}$ since it is a prismatic joint as well as because of the joint 2 being a revolute joint and so, it can change its orientation hence, we will give a new name for our hypotenuse, in this case, $r_{1}$. So from the equation 1, we can now derive the formula for $r_{1}$.   |
 
 </div>
 <br>
