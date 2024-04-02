@@ -627,20 +627,17 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 
 #### Installer (Installation Guide)
 
-1. Download and run the [SphericalCalc_v2.5_setup.exe](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalc_v2.5_setup.exe) file.
+1. Download and run the [SphericalCalcApp_setup.exe](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcApp.zip) file.
 2. During install it in a directory such as Desktop or Document.
-3. Do not launch the app yet and close the installer.
-4. Install the fonts from the _fonts_ folder
-5. Run __Spherical_GUI.exe__ and enjoy the app.
+3. Run __Spherical_GUI.exe__ and enjoy the app.
 
 <sub>Installation Video <a href="">Here</a></sub>
 
 #### Portable Software
 
-1. Download the zip file [SphericalCalcZip.zip](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcZip.zip).
+1. Download the zip file [SphericalCalcApp.zip](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcApp.zip).
 2. Extract the file.
-3. Install the fonts from the _fonts_ folder.
-4. Run __Spherical_GUI.exe__ and enjoy the app.
+3. Run __Spherical_GUI.exe__ and enjoy the app.
 
 <sub>Installation Video <a href="">Here</a></sub>
 <br>
