@@ -255,7 +255,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 ___
 
 <p align="center">
-  <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/d7c3f33c-a251-41f5-a656-f15b2fae8357"
+  <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/Kinematic%20Diagram%20with%20DH%20Frame%20Assignments%20and%20DH%20Parameters.png?raw=true"
 " style="height: 300px;"></p>
 </div>
 <br>
@@ -594,9 +594,19 @@ When obtaining the data, it is nice to runback through the obtained results of f
 </p>
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif" width= 700>
 </p>
 <br>
+
+#### View Excel File
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+As the data from previous session can be recorded, we created a button that is linked to access the excel file where all data are stored. Sheets for forward kinematics data is separated to the inverse kinematics formula. Additionally we add timestamp to better track the desired results.
+<p>
+
+<center>
+  <img sr="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/View_Excel.gif" width= 700>
+</center>
 
 #### Error Message Boxes
 
@@ -607,19 +617,19 @@ When entering data, it is inevitable to encounter mistakes. We designed the appl
 - __Please fill all required fields__ - this error will be encountered if the required entry boxes for either forward or inverse are not filled. 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif" width= 700>
 </p>
 
 - __Invalid Input__ - this error will be encountered when a non float value is detected in on the entry boxes. It will be prompt 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif" width= 700>
 </p>
 
 - __Undefined__ - this error occurs when ``ZeroDivisionError`` occured on the inverse kinematics computation. These is due to the [Formula #1]() of the inverse kinematics computation. 
 
 <p align="center">
-<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif?raw=true" width= 700>
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif" width= 700>
 </p>
 <br>
 
