@@ -647,7 +647,7 @@ As the data from previous session can be recorded, we created a button that is l
 <p>
 
 <p align="center">
-  <img sr="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/View_Excel.gif" width= 700>
+<img sr="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/View_Excel.gif" width= 700>
 </p>
 
 #### Error Message Boxes
