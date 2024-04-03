@@ -379,7 +379,7 @@ $$
 
 <br>
 
-  - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices H_{1}^{0}, H_{2}^{1}, and H_{3}^{2} together. Then we can obtain: 
+  - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices $H_{1}^{0}$, $H_{2}^{1}$, and $H_{3}^{2}$ together. Then we can obtain: 
 
 $$
 H_{3}^{0} =
