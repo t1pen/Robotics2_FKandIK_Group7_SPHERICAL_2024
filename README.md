@@ -266,7 +266,7 @@ ___
 
 <p align="center"> <b>D-H Prametric Table Tutorial Video</b> </p>
   <p align="center">
-  <img src=link alt=D-H-Parametic-Table-Tutorial-Video style="height: 300px; float: left;">
+  <img src=(https://youtu.be/mnKm1PiER7k?si=ki7D81TYbW5VmVVx) alt=D-H-Parametic-Table-Tutorial-Video style="height: 300px; float: left;">
 <br>
 
 
