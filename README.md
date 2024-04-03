@@ -646,9 +646,9 @@ When obtaining the data, it is nice to runback through the obtained results of f
 As the data from previous session can be recorded, we created a button that is linked to access the excel file where all data are stored. Sheets for forward kinematics data is separated to the inverse kinematics formula. Additionally we add timestamp to better track the desired results.
 <p>
 
-<center>
+<p align="center">
   <img sr="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/View_Excel.gif" width= 700>
-</center>
+</p>
 
 #### Error Message Boxes
 
