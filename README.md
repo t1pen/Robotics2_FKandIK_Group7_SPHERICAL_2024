@@ -533,7 +533,7 @@ ___
 <br>
 
 
-<p align="center"> <b>Inverse Kinematics using Graphical Method</b>b> </p> 
+<p align="center"> <b>Inverse Kinematics using Graphical Method</b> </p> 
 
 <div align="center">
   
