@@ -6,20 +6,36 @@ import roboticstoolbox as rtb
 import numpy as np 
 from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
 from datetime import datetime
-import os  
+import os 
+import tkinter as tk
+import pyglet
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"assets")
 
-
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
+# Load External Fonts
+pyglet.options['win32_gdi_font'] = True
+pyglet.font.add_file(r'assets\metropolis.extra-bold.otf')
+pyglet.font.add_file(r'assets\metropolis.semi-bold.otf')
+pyglet.font.add_file(r'assets\metropolis.black.otf')
+
 window = Tk()
-window.geometry("900x600")
+# Make Window Appear at the middle of the screen
+screen_width = window.winfo_screenwidth()
+screen_height = window.winfo_screenheight()
+window_width = 900
+window_height = 600
+x_position = (screen_width - window_width) // 2
+y_position = (screen_height - window_height) // 2
+window.geometry(f"{window_width}x{window_height}+{x_position}+{y_position}")
+
+# Configure Window Title and Icon
 window.configure(bg = "#FFFFFF")
 window.title("Spherical Manipulator Calculator")
-window.iconbitmap(r"assets/robotic-arm.ico")
+window.iconbitmap(r"assets\robotic-arm.ico")
 
 # Create a workbook and add sheets for f_k and i_k data
 workbook = openpyxl.Workbook()
@@ -252,7 +268,7 @@ def f_k():
     #robot_variable = DHRobot([PrismaticDH(d=0,r,alpha,offset=d,qlim)])
     Spherical = DHRobot([
         RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
-        RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[0,np.pi/2]),
+        RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[-np.pi/4,np.pi/4]),
         PrismaticDH(0,0,(0.0/180)*np.pi,a2+a3,qlim=[0,d3])
     ], name="Spherical")
 
@@ -324,16 +340,15 @@ def i_k():
 
     # Plot commands
     Spherical = DHRobot([
-        RevoluteDH(a1, 0, (90.0 / 180.0) * np.pi, (0.0 / 180.0) * np.pi, qlim=[-np.pi / 2, np.pi / 2]),
-        RevoluteDH(0, 0, (90.0 / 180.0) * np.pi, (90.0 / 180.0) * np.pi, qlim=[0, np.pi / 2]),
-        PrismaticDH(0, 0, (0.0 / 180) * np.pi, a2 + a3, qlim=[0, d3_ik_cm])
+        RevoluteDH(a1,0,(90.0/180.0)*np.pi,(0.0/180.0)*np.pi,qlim=[-np.pi/2,np.pi/2]),
+        RevoluteDH(0,0,(90.0/180.0)*np.pi,(90.0/180.0)*np.pi,qlim=[-np.pi/4,np.pi/4]),
+        PrismaticDH(0,0,(0.0/180)*np.pi,a2+a3,qlim=[0,d3_ik_cm])
     ], name="Spherical")
 
     q1 = np.array([t1_ik, t2_ik, d3_ik_cm])  # Use d3_ik_m (in meters)
 
     # Plot commands
     Spherical.plot(q1, block=True)
-
 
 
 canvas = Canvas(
@@ -856,14 +871,14 @@ save_to_excel_checkbutton.place(
 
 save_to_excel_label = Label(
     text='Record Data',
-    font= ('Calibri', (12)),
+    font= ('Metropolis Semi Bold', 10),
     fg= '#FFFFFF',
     bg= '#262626'
 )
 
 save_to_excel_label.place(
     x=120,
-    y=565
+    y=569
 )
 view_excel_button = Button(
     text= "View Excel",
