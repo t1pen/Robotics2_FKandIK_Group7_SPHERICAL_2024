@@ -466,7 +466,7 @@ ___
   
 |  Front View  | Process |
 |   ---  |   ---  |
-|  <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1250px"></p> <br> <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1250px"></p>  |  &nbsp;&nbsp;&nbsp;&nbsp;And now in terms of the front view of the spherical manipulator, the $r_{1}$ will now be the adjacent length or side of $\theta_{2}$. After placing the $r_{1}$, it can be noticed that we now have a right triangle with the $a_{2}+a_{3}+d_{3}$ being the hypotenuse. However we can’t use the $Z$ as the opposite side of our triangle thus, we will make a another line that would represent the opposite length of  $\theta_{2}$ and we will call it as $r_{2}$. <br><br> Based on the illustration above, we can derive that,<br> &nbsp;&nbsp;&nbsp;&nbsp; $Z = a_{1}+r_{2}$ therefore,<br> &nbsp;&nbsp;&nbsp;&nbsp; $r_{2} =  Z - a_{1}$  eq. 3 <br><br> And so, we can now derive for the formula of  $\theta_{2}$ using again the sohcahtoa;<br> &nbsp;&nbsp;&nbsp;&nbsp; $tan\theta_{2}=\frac{opposite}{adjacent}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $opposite = r_{2}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $adjacent = r_{1}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $\theta_{2}=tan^{-1}(\frac{r_{2}}{r_{1}})$  eq. 4 <br> <br> Finally, to find the joint variable $d_{3}$, the Pythagorean theorem is used;<br> &nbsp;&nbsp;&nbsp;&nbsp; $c_{2} = a_{2} + b_{2}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $( a_{2}+a_{3}+d_{3})^{2} ) = r_{1}^{2} + r_{2}^{2}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $a_{2}+a_{3}+d_{3})^{2} = \sqrt({r_{1}^){2} + (r_{2})^{2}}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $d_{3} = \sqrt{r_{1}^{2} + r_{2}^{2}} - a^{2} - a^{3}$  eq. 5  |
+|  <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1250px"></p> <br> <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1250px"></p>  |  &nbsp;&nbsp;&nbsp;&nbsp;And now in terms of the front view of the spherical manipulator, the $r_{1}$ will now be the adjacent length or side of $\theta_{2}$. After placing the $r_{1}$, it can be noticed that we now have a right triangle with the $a_{2}+a_{3}+d_{3}$ being the hypotenuse. However we can’t use the $Z$ as the opposite side of our triangle thus, we will make a another line that would represent the opposite length of  $\theta_{2}$ and we will call it as $r_{2}$. <br><br> Based on the illustration above, we can derive that,<br> &nbsp;&nbsp;&nbsp;&nbsp; $Z = a_{1}+r_{2}$ therefore,<br> &nbsp;&nbsp;&nbsp;&nbsp; $r_{2} =  Z - a_{1}$  eq. 3 <br><br> And so, we can now derive for the formula of  $\theta_{2}$ using again the sohcahtoa;<br> &nbsp;&nbsp;&nbsp;&nbsp; $tan\theta_{2}=\frac{opposite}{adjacent}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $opposite = r_{2}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $adjacent = r_{1}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $\theta_{2}=tan^{-1}(\frac{r_{2}}{r_{1}})$  eq. 4 <br> <br> Finally, to find the joint variable $d_{3}$, the Pythagorean theorem is used;<br> &nbsp;&nbsp;&nbsp;&nbsp; $c_{2} = a_{2} + b_{2}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $( a_{2}+a_{3}+d_{3})^{2} ) = r_{1}^{2} + r_{2}^{2}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $a_{2}+a_{3}+d_{3})^{2} = \sqrt{(r_{1})^{2} + (r_{2})^{2}}$ <br> &nbsp;&nbsp;&nbsp;&nbsp; $d_{3} = \sqrt{(r_{1})^{2}+ (r_{2})^{2}} - a^{2} - a^{3}$  eq. 5  |
 
 </div>
 <br>
@@ -689,81 +689,6 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 
 
 ## X. Group Members:
-- Alojado, Stephen Gabriel S.
-- Apostol, Jan Benedict D.
-- Cardenas, Sofia Bianca J.
-- Catapang, Jamil Darrius S.
-- Umali, Ariane Mae D.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-## Table of Contents
-- [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-kinematic-diagram-and-parametric-table-of-spherical-manipulator-)
-- [Derivation of Inverse Kinematics using Graphical Method](#-derivation-of-inverse-kinematics-using-graphical-method-)
-- [Comparison of Forward and Inverse Kinematics in MATLAB and Phyton](#-comparison-of-forward-and-inverse-kinematics-in-matlab-and-phyton-)
-   - [Trial Table of Forward Kinematics in MATLAB and Python](#-trial-table-of-forward-kinematics-in-matlab-and-python-)
-   - [Trial Table of Inverse Kinematics in MATLAB and Python](#-trial-table-of-inverse-kinematics-in-matlab-and-python-)
-- [Group Members](#group-members)
-<br>
-
-<h1 align="center"> Kinematic Diagram and Parametric Table of Spherical Manipulator </h1> 
-<p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/c0c481a4-3d7c-4005-83e1-21bc436ec15e alt=DH_Frame_and_Parametric_Table width="700"/>
-<p align="center">
-</p>
-<br>
-<br>
-
-<h1 align="center"> Derivation of Inverse Kinematics using Graphical Method </h1> 
-<p align="center">
-   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/b659b633-7068-412a-b9b0-58626bb0287f alt=Inverse_Kinematics_Graphical_Method_1 width="700"/>
-<p align="center">
-   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/d8f43e6d-8a61-4257-808e-a8dff408b0ef alt=Inverse_Kinematics_Graphical_Method_2 width="700"/>
-<br>
-<br>
-
-<h1 align="center"> Comparison of Forward and Inverse Kinematics in MATLAB and Phyton </h1>
-<hr>
-
-<h1 align="center"> Trial Table of Forward Kinematics in MATLAB and Python </h1> 
-<p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/0d4a1af26e3a6964fa47395ed9f41d56eaa53fae/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Forward%20Kinematics.png alt=trial-table-of-forward-kinematics-in-matlab-and-python width="800"/>
-</p>
-<br>
-<br>
-
-<h1 align="center"> Trial Table of Inverse Kinematics in MATLAB and Python </h1> 
-<p align="center">
-  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/440b5c7742bceab7f9bf815b060b93355776fd29/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Inverse%20Kinamatics.png alt=trial-table-of-inverse-kinematics-in-matlab-and-python width="990"/>
-</p>
-<br>
-<br>
-
-
-### Group Members:
 - Alojado, Stephen Gabriel S.
 - Apostol, Jan Benedict D.
 - Cardenas, Sofia Bianca J.
