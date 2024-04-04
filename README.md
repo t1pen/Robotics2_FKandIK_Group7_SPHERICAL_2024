@@ -388,7 +388,7 @@ $$
 
 #### Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video
 
-[![Homogeneous Transformation Matrix](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/edb6d97f-dbc4-47c9-8d06-843654c1b489)](https://www.youtube.com/watch?v=Y5I9Ls5j5U-M)
+[![Homogeneous Transformation Matrix](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/edb6d97f-dbc4-47c9-8d06-843654c1b489)](https://www.youtube.com/watch?v=5I9Ls5j5U-M)
 
 
 ## VII. Inverse Kinematics
