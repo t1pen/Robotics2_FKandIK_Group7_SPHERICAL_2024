@@ -137,7 +137,6 @@ ___
 
 
 
-
 ## IV. Kinematic Diagram and D-H Frame
   <p align="center">
   <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
@@ -221,7 +220,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 
 #### Kinematic Diagram and D-H Frame of a Spherical Manipulator Tutorial Video
 
-[![Kinematic Diagram and D-H Frame](img link)](vid link)
+![Kinematic Diagram Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/663645cb-1c74-4885-adbb-916cdb70ea0a)(https://youtu.be/zZ7G4kbAt04?si=Fj-rtLJrEH_eJqRP)
 
 <br>
 
