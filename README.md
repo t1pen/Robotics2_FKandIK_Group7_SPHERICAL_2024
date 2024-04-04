@@ -744,7 +744,7 @@ Installation of the application can be done in two ways: <b>Installer</b>, or <b
 #### Installer
 
 1. Download and run the [SphericalCalcApp_setup.exe](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcApp.zip) file.
-2. During install it in a directory such as Desktop or Document.
+2. During installation, install it in a directory such as Desktop or Document.
 3. Run __Spherical_GUI.exe__ and enjoy the app.
 
 <sub>Installation Video <a href="">Here</a></sub>
