@@ -120,9 +120,9 @@ ___
 </p>
 <br>
 
-<p align="center"> <b>Kinematic Diagram and D-H Frame Tutorial Video</b> </p>
+<p align="center"> <b>Degrees of Freedom Tutorial Video</b> </p>
   <p align="center">
-  <img src=link alt=Kinematic-Diagram-and-D-H-Frame-Tutorial-Video style="height: 300px; float: left;">
+  <img src=link alt=Degrees-of-Freedom-Tutorial-Video style="height: 300px; float: left;">
 <br>
 
 
