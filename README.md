@@ -288,10 +288,10 @@ H_{n}^{n-1} =
 \end{bmatrix}
 $$
 <br>
+<br>
+<br>
 
-
-$$\begin{aligned}
-H_{n}^{n-1} = 
+$$H_{n}^{n-1} = 
 \begin{bmatrix} 
   cos\theta_{n} & -sin\theta_{n}cos\alpha_{n} & sin\theta_{n} sin\alpha_{n} & r_{n}cos\theta_{n} 
   \\
@@ -300,19 +300,7 @@ H_{n}^{n-1} =
   0 & sin\alpha_{n} & cos\alpha_{n} & d_{n} 
   \\
   0 & 0 & 0 & 1 
-\end{bmatrix} 
-&& or &&
-H_{n}^{n-1} = 
-\begin{bmatrix} 
-  c\theta_{n} & -s\theta_{n}c\alpha_{n} & s\theta_{n} s\alpha_{n} & r_{n}c\theta_{n} 
-  \\
-  s\theta_{n} & c\theta_{n}c\alpha_{n} &  -c\theta_{n}s\alpha_{n} & r_{n}s\theta_{n}
-  \\
-  0 & s\alpha_{n} & c\alpha_{n} & d_{n}
-  \\
-  0 & 0 & 0 & 1
-\end{bmatrix}
-\end{aligned}$$
+\end{bmatrix}$$
 
 <br>
 <br>
@@ -400,12 +388,7 @@ $$
 
 #### Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video
 
-[![Homogeneous Transformation Matrix](https://img.youtube.com/vi/5I9Ls5j5U-M/0.jpg)](https://www.youtube.com/watch?v=Y5I9Ls5j5U-M)
-
-
-
-
-
+[![Homogeneous Transformation Matrix](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614863/edb6d97f-dbc4-47c9-8d06-843654c1b489)](https://www.youtube.com/watch?v=Y5I9Ls5j5U-M)
 
 
 ## VII. Inverse Kinematics
