@@ -120,6 +120,13 @@ ___
 </p>
 <br>
 
+<p align="center"> <b>Kinematic Diagram and D-H Frame Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=Kinematic-Diagram-and-D-H-Frame-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
+
+
 ## IV. Kinematic Diagram and D-H Frame
   <p align="center">
   <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
