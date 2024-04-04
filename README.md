@@ -131,7 +131,7 @@ ___
 
 #### Degrees of Freedom of a Spherical Manipulator Tutorial Video
 
-[![Degrees of Freedom](img link)](vid link)
+[![Degrees of Freedom](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/fe4368ac5efc81fbd47f3fbf5cc1e09a94051882/Midterm%20Project/Video/Degrees%20of%20Freedom%20Vid.png](https://youtu.be/mnKm1PiER7k?si=11NSObyTCmY0OiG2)
 
 <br>
 
