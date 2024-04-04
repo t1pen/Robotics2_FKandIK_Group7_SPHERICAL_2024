@@ -259,7 +259,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 
 <div align="center">
   
-| $\theta$ | $\alpha$ | $d$ | $r$ |
+| $\theta$ | $\alpha$ | $r$ | $d$ |
 |     :---:     |     :---:     |     :---:    |     :---:     
 |  " $\theta$ " is the rotation around $z_{n-1}$ that is required to get $x_{n-1}$ to match $x_{n}$, with the joint variable theta if the joint is a revolute or twisting joint.  |   " $\alpha$ " is the rotation around $x_{n}$ that is required to match $z_{n-1}$ to $z_{n}$.  |  " $r$ " is the distance from the origin of $n-1$ and $n$ frames along the $x_{n}$ direction.  |  " $d$ " is the distance from the origin of $n-1$ and $n$ frames along the $z_{n-1}$ direction with the joint variable if the joint is prismatic.  |
 
