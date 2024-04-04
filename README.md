@@ -120,9 +120,10 @@ ___
 </p>
 <br>
 
-<p align="center"> <b>Degrees of Freedom Tutorial Video</b> </p>
-  <p align="center">
-  <img src=link alt=Degrees-of-Freedom-Tutorial-Video style="height: 300px; float: left;">
+#### Degrees of Freedom of a Spherical Manipulator Tutorial Video
+
+[![Degrees of Freedom](img link)](vid link)
+
 <br>
 
 
@@ -208,9 +209,10 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 <br>
 
 
-<p align="center"> <b>Kinematic Diagram and D-H Frame Tutorial Video</b> </p>
-  <p align="center">
-  <img src=link alt=Kinematic-Diagram-and-D-H-Frame-Tutorial-Video style="height: 300px; float: left;">
+#### Kinematic Diagram and D-H Frame of a Spherical Manipulator Tutorial Video
+
+[![Kinematic Diagram and D-H Frame](img link)](vid link)
+
 <br>
 
 
@@ -271,9 +273,10 @@ ___
 <br>
 
 
-<p align="center"> <b>D-H Prametric Table Tutorial Video</b> </p>
-  <p align="center">
-  <img src=link alt=D-H-Parametic-Table-Tutorial-Video style="height: 300px; float: left;">
+#### D-H Parametric Table for a Spherical Manipulator Tutorial Video
+
+[![D-H Parametric Table](img link)](vid link)
+
 <br>
 
 
@@ -469,6 +472,13 @@ ___
       - Then for the new side, which is the $r_{2}$ to get the value of $Z_{3}^{0}$, so the $r_{2}$ is equal to $Z_{3}^{0} - a_{1}$.
       - To solve for $\theta_{2}$, we can use again the inverse tangent formula.
       - Then to solve for $d_{3}$, we will use the Pythagorean Theorem.
+<br>
+
+
+#### Inverse Kinematics of a Spherical Manipulator Tutorial Video
+
+[![Inverse Kinematics](img link)](vid link)
+
 <br>
 
 
