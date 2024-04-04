@@ -17,9 +17,18 @@
 
 
 ## I. Abstract
-    (description)
-<hr> 
+<p align="justify"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The field of robotics is brimming with innovation, and our project delves into the fascinating world of spherical manipulators. This project explores the fascinating world of spherical manipulators, robots with three rotational degrees of freedom. We begin by explaining degrees of freedom in an engaging video, laying the groundwork for understanding the manipulator's abilities.
 <br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A clear kinematic diagram depicts the manipulator's structure, which aids in movement analysis. To systematically define the relationship between each joint and link, the Denavit-Hartenberg (D-H) convention is used.  A D-H parameter table is then created, which contains a concise representation of the manipulator's key geometric parameters. The project delves deeper into the concept of homogeneous transformation matrices, a powerful mathematical tool for representing the position and orientation of the end-effector relative to the base frame.  A key focus is on solving the inverse kinematics problem, which determines the joint angles required to achieve the desired end-effector position. To bridge the gap between theory and practice, we present the creation of a user-friendly Graphical User Interface (GUI) calculator. This interactive tool allows users to perform forward and inverse kinematics calculations. The calculator calculates the end-effector pose simply by inputting joint angles (forward kinematics).  Inverse kinematics allows users to specify an end-effector pose and obtain the corresponding joint angles. 
+<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project provides a thorough examination of spherical manipulator kinematics, combining an educational video explanation with a practical and user-friendly GUI calculator. It aims to improve understanding and control of these versatile robots. So prepare to embark on a journey of discovery! Our project promises to reveal the inner workings of spherical manipulators, paving the way for more precise control and innovative uses.
+</p>
+<br>
+
+
 
 ## II. Introduction
 
