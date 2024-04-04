@@ -489,7 +489,7 @@ $$
 
 #### Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video
 
-[![D-H Parametric Table Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/c3a6cf31-c33f-47b0-8eab-2430ea2ffbf2)](https://youtu.be/PkXZ-gn0GwY)
+[![Homogeneous Transformation Matrix Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/905cd7ed-a134-434b-8c85-5eec3bf13496)](https://youtu.be/PkXZ-gn0GwY)
 
 <br>
 
