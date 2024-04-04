@@ -399,7 +399,11 @@ $$
 
 
 #### Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video
+
 [![Homogeneous Transformation Matrix](https://img.youtube.com/vi/5I9Ls5j5U-M/0.jpg)](https://www.youtube.com/watch?v=Y5I9Ls5j5U-M)
+
+
+
 
 
 
