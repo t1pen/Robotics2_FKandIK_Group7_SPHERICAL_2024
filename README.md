@@ -486,7 +486,7 @@ ___
 
 #### Inverse Kinematics of a Spherical Manipulator Tutorial Video
 
-[![Inverse Kinematics](img link)](vid link)
+[![Inverse Kinematics Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/11b73c50-734a-40a6-a7f9-aff4a56bae58)]
 
 <br>
 
