@@ -404,6 +404,88 @@ $$
 
 <br>
 
+#### Obtaining the Homogeneous Transformation Matrix Formula D-H Parametric Table Method
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+This method of obtaining the Homogeneous Transforamtion Matrix is a much easier way than the last one.  This works by plugging in each paramater to this homogeneous transforamtion matrix formula.
+</p>
+
+$$
+H_{n}^{n-1} = 
+\begin{bmatrix}
+  cos\theta_{n} & -sin\theta_{n}cos\alpha_{n} & sin\theta_{n} sin\alpha_{n} & r_{n}cos\theta_{n} 
+  \\
+  sin\theta_{n} & cos\theta_{n}cos\alpha_{n} & -cos\theta_{n}sin\alpha_{n} & r_{n}sin\theta_{n} 
+  \\
+  0 & sin\alpha_{n} & cos\alpha_{n} & d_{n} 
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Using the D-H parametric table we plugin the values of, $&theta;$, $&alpha;$, $r$, $d$ for each row that is represented by $n$.   
+</p>
+
+<div align='center'>
+
+| $n$   | $\theta$ | $\alpha$ |    $r$    |    $d$    |
+| :---: |  :---:  |  :---:  |  :---:  |  :---:  |   
+|   1   |    $0\degree +\theta_{1}$     |  $90\degree$       |     $0$    |     $a_{1}$    |
+|   2   |    $90\degree +\theta_{2}$     |    $90\degree$     |    $0$      |     $0$     |
+|   3   |    $0\degree$      |     $0\degree$     |     $0$     |      $a_{1}+a_{2}+d_{3}$    |
+
+</div>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  After you have plugin the values of the D-H Parametric Table, we can no obtain $H_{1}^{0}$, $H_{2}^{1}$, and $H_{3}^{2}$. The resultant matrix are the following:   
+</p>
+
+$$
+H_{1}^{0} = 
+\begin{bmatrix}
+  cos\theta_{1} & -sin\theta_{1}cos\alpha_{1} & sin\theta_{1} sin\alpha_{1} & r_{1}cos\theta_{1} 
+  \\
+  sin\theta_{1} & cos\theta_{1}cos\alpha_{1} & -cos\theta_{1}sin\alpha_{1} & r_{1}sin\theta_{1} 
+  \\
+  0 & sin\alpha_{1} & cos\alpha_{1} & d_{1} 
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+$$
+H_{2}^{1} = 
+\begin{bmatrix}
+  cos\theta_{2} & -sin\theta_{2}cos\alpha_{2} & sin\theta_{2} sin\alpha_{2} & r_{2}cos\theta_{2} 
+  \\
+  sin\theta_{2} & cos\theta_{2}cos\alpha_{2} & -cos\theta_{2}sin\alpha_{2} & r_{2}sin\theta_{2} 
+  \\
+  0 & sin\alpha_{2} & cos\alpha_{2} & d_{2} 
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+$$
+H_{3}^{2} = 
+\begin{bmatrix}
+  cos\theta_{3} & -sin\theta_{3}cos\alpha_{3} & sin\theta_{3} sin\alpha_{3} & r_{3}cos\theta_{3} 
+  \\
+  sin\theta_{3} & cos\theta_{3}cos\alpha_{3} & -cos\theta_{3}sin\alpha_{3} & r_{3}sin\theta_{3} 
+  \\
+  0 & sin\alpha_{3} & cos\alpha_{3} & d_{3} 
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  After obtaining $H_{1}^{0}$, $H_{2}^{1}$, and $H_{3}^{2}$, we now multiply the matrices to obtain $H_{3}^{0}$. However, due to its lengthy solution, we are not able to show you the resultant matrix that is why we need to incorporate the use of programming to valdiate the results of this method. This validation of this method is shown in the video below. In addtion, this is the method we used in obtaining the Forward Kinematics of the Spherical Manipulator. Therfore, we can validate that this method is efficient and effective.
+</p>
+
+<br>
+
 
 #### Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video
 
