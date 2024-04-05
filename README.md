@@ -131,7 +131,7 @@ ___
 </p>
 <br>
 
-#### Degrees of Freedom of a Spherical Manipulator Tutorial Video
+### Degrees of Freedom of a Spherical Manipulator Video Tutorial
 
 [![Degrees of Freedom Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/39e21a83-98fe-494d-a3cf-e3a6db176c38)](https://youtu.be/mnKm1PiER7k?si=11NSObyTCmY0OiG2)
 
@@ -220,7 +220,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 <br>
 
 
-#### Kinematic Diagram and D-H Frame of a Spherical Manipulator Tutorial Video
+### Kinematic Diagram and D-H Frame of a Spherical Manipulator Video Tutorial 
 
 [![Kinematic Diagram Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/663645cb-1c74-4885-adbb-916cdb70ea0a)](https://youtu.be/zZ7G4kbAt04?si=Fj-rtLJrEH_eJqRP)
 
@@ -493,7 +493,7 @@ $$
 <br>
 
 
-#### Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video
+### Homogeneous Transformation Matrix of a Spherical Manipulator Video Tutorial 
 
 [![Homogeneous Transformation Matrix Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/905cd7ed-a134-434b-8c85-5eec3bf13496)](https://youtu.be/PkXZ-gn0GwY)
 
@@ -572,7 +572,7 @@ ___
 <br>
 
 
-#### Inverse Kinematics of a Spherical Manipulator Tutorial Video
+### Inverse Kinematics of a Spherical Manipulator Video Tutorial 
 
 [![Inverse Kinematics Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/11b73c50-734a-40a6-a7f9-aff4a56bae58)](https://youtu.be/W9s4Ie82Ap0)
 
