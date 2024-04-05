@@ -5,7 +5,7 @@
   - [I. Abstract](#i-abstract)
   - [II. Introduction](#ii-introduction)
   - [III. Degrees of Freedom](#iii-degrees-of-freedom)
-  - [IV. Kinematic Diagram and D-H Frame](#iv-kinematic-diagram-and-d-h-frame)
+  - [IV. Kinematic Diagram and D-H Frame Assignments](#iv-kinematic-diagram-and-d-h-frame)
   - [V. D-H Parametric Table](#v-d-h-parametric-table)
   - [VI. Homogeneous Transformation Matrix](#vi-homogeneous-transformation-matrix)
   - [VII. Inverse Kinematics](#vii-inverse-kinematics)
@@ -139,7 +139,7 @@ ___
 
 
 
-## IV. Kinematic Diagram and D-H Frame
+## IV. Kinematic Diagram and D-H Frame Assignments
   <p align="center">
   <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
   </div>
