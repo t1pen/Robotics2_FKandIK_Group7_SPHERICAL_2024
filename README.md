@@ -231,7 +231,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 ## V. D-H Parametric Table
 
 <p align= "justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-In this section, we are going to discover how to find the Denavit-Hartenberg Parameter table for robotic arms. This approach is a shortcut to obtaining homogeneous transformation matrices and is frequently used in industrial robot documentation as well as research literature.
+In this section, we are going to discover how to find the <b>Denavit-Hartenberg Parametric Table</b> for robotic arms. This approach is a shortcut to obtaining homogeneous transformation matrices and is frequently used in industrial robot documentation as well as research literature.
 </p>
 
 #### Steps in Denavit-Hartenberg Notation
@@ -288,7 +288,7 @@ ___
 <br>
 
 
-#### D-H Parametric Table for a Spherical Manipulator Tutorial Video
+### D-H Parametric Table for a Spherical Manipulator Tutorial Video
 
 [![D-H Parametric Table Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/732a991e-9d57-45d1-a0df-d99e02ab7e3f)](https://youtu.be/Bhz1y153_98?si=WD-beuqAP2u4eSK3)
 
