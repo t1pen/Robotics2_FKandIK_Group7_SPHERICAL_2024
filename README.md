@@ -230,7 +230,7 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 
 ## V. D-H Parametric Table
 
-<p align= "center">
+<p align= "justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 In this section, we are going to discover how to find the Denavit-Hartenberg Parameter table for robotic arms. This approach is a shortcut to obtaining homogeneous transformation matrices and is frequently used in industrial robot documentation as well as research literature.
 </p>
 
