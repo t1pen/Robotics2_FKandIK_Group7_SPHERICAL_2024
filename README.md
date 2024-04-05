@@ -178,7 +178,7 @@ ___
 <br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <b><i>Joint Variables</i></b>, are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> ($&theta;$) , theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as $d$, $d$ is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.
+ <b><i>Joint Variables</i></b>, are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> ($&theta;$) , theta is the rotation angle of the revolute joint. While in a prismatic joint we use this symbol &#8614; and label it as $d$, $d$ is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.
 </p>
 <br>
 
@@ -229,6 +229,10 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
 
 
 ## V. D-H Parametric Table
+
+<p align= "center">
+In this section, we are going to discover how to find the Denavit-Hartenberg Parameter table for robotic arms. This approach is a shortcut to obtaining homogeneous transformation matrices and is frequently used in industrial robot documentation as well as research literature.
+</p>
 
 #### Steps in Denavit-Hartenberg Notation
   1.  Assign the frames according to the 4 D-H Frame Rules.
