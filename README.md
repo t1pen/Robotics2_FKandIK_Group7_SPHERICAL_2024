@@ -5,7 +5,7 @@
   - [I. Abstract](#i-abstract)
   - [II. Introduction](#ii-introduction)
   - [III. Degrees of Freedom](#iii-degrees-of-freedom)
-  - [IV. Kinematic Diagram and D-H Frame Assignments](#iv-kinematic-diagram-and-d-h-frame-assignments)
+  - [IV. Kinematic Diagram and D-H Frame Assignment](#iv-kinematic-diagram-and-d-h-frame-assignment)
   - [V. D-H Parametric Table](#v-d-h-parametric-table)
   - [VI. Homogeneous Transformation Matrix](#vi-homogeneous-transformation-matrix)
   - [VII. Inverse Kinematics](#vii-inverse-kinematics)
@@ -22,7 +22,7 @@
 <br>
 
 <p align="justify">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A clear kinematic diagram depicts the manipulator's structure, which aids in movement analysis. To systematically define the relationship between each joint and link, the Denavit-Hartenberg (D-H) convention is used.  A D-H parameter table is then created, which contains a concise representation of the manipulator's key geometric parameters. The project delves deeper into the concept of homogeneous transformation matrices, a powerful mathematical tool for representing the position and orientation of the end-effector relative to the base frame.  A key focus is on solving the inverse kinematics problem, which determines the joint angles required to achieve the desired end-effector position. To bridge the gap between theory and practice, we present the creation of a user-friendly Graphical User Interface (GUI) calculator. This interactive tool allows users to perform forward and inverse kinematics calculations. The calculator calculates the end-effector position simply by inputting joint variables known as forward kinematics. In addition, the calculator allows users to solve the inverse kinematics of the spherical manipulator by specifying the position vertors to obtain the correspong joint variables. 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A clear kinematic diagram depicts the manipulator's structure, which aids in movement analysis. To systematically define the relationship between each joint and link, the Denavit-Hartenberg (D-H) convention is used.  A D-H parameter table is then created, which contains a concise representation of the manipulator's key geometric parameters. The project delves deeper into the concept of transformation matrices, a powerful mathematical tool for representing the position and orientation of the end-effector relative to the base frame.  A key focus is on solving the inverse kinematics problem, which determines the joint angles required to achieve the desired end-effector position. To bridge the gap between theory and practice, we present the creation of a user-friendly Graphical User Interface (GUI) calculator. This interactive tool allows users to perform forward and inverse kinematics calculations. The calculator calculates the end-effector position simply by inputting joint variables known as forward kinematics. In addition, the calculator allows users to solve the inverse kinematics of the spherical manipulator by specifying the position vertors to obtain the correspong joint variables. 
 <br>
 
 <p align="justify">
@@ -336,12 +336,54 @@ ___
 
 
 <p align="justify"> 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to obtain the Homogeneous Transformation Matrix, by manual computation and using the D-H Parametric Table.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to obtain the Homogeneous Transformation Matrix, by manual computation and using the D-H Parametric Table. We will guide you to a through discussion on how to get the Homogeneous transformation matrix in both wayys.
 </p>
 <br>
 
 #### Obtaining the Homogeneous Transformation Matrix Formula Computed Method
-  - To obtain $H_{1}^{0}$, concatenate the rotation matrix $r_{1}^{0}$ and the position vector $r_{1}^{0}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+  - To obtain $H_{1}^{0}$, concatenate the rotation matrix $R_{1}^{0}$ and the position vector $P_{1}^{0}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+
+$$
+R_{1}^{0} = 
+\begin{bmatrix}
+  cos\theta_{1} & -sin\theta_{1} & 0
+  \\
+  sin\theta_{1} & cos\theta_{1} & 0
+  \\
+  0 & 0 & 1 \\
+\end{bmatrix}
+\times
+\begin{bmatrix}
+  1 & 0 & 0
+  \\
+  0 & 0 & -1
+  \\
+  0 &1 &0
+\end{bmatrix}
+$$
+
+$$
+R_{1}^{0}= 
+\begin{bmatrix}
+  cos\theta_{1} & 0 & sin\theta{1}
+  \\
+  sin\theta_{1} & 0 & cos\theta_{1}
+  \\
+  0 & 1 & 0 \\
+\end{bmatrix}
+$$
+
+$$
+P_{1}^{0}= 
+\begin{bmatrix}
+  0
+  \\
+  0
+  \\
+  a_{1}
+\end{bmatrix}
+$$
+
 
 $$
 H_{1}^{0} =
@@ -358,7 +400,49 @@ $$
 
 <br>
 
-  - Same as the previous matrix, to get the $H_{2}^{1}$, concatenate the rotation matrix $r_{2}^{1}$ and position vector $p_{2}^{1}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below. 
+  - Same as the previous matrix, to get the $H_{2}^{1}$, concatenate the rotation matrix $R_{2}^{1}$ and position vector $P_{2}^{1}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+
+$$
+R_{2}^{1} = 
+\begin{bmatrix}
+  cos\theta_{2} & -sin\theta_{2} & 0
+  \\
+  sin\theta_{2} & cos\theta_{2} & 0
+  \\
+  0 & 0 & 1 \\
+\end{bmatrix}
+\times
+\begin{bmatrix}
+  0 & 0 & 1
+  \\
+  1 & 0 & 0
+  \\
+  0 &1 &0
+\end{bmatrix}
+$$
+
+$$
+R_{2}^{1}= 
+\begin{bmatrix}
+  -sin\theta_{2} & 0 & cos\theta{2}
+  \\
+  cos\theta_{2} & 0 & sin\theta_{2}
+  \\
+  0 & 1 & 0 \\
+\end{bmatrix}
+$$
+
+$$
+P_{2}^{1}= 
+\begin{bmatrix}
+  0
+  \\
+  0
+  \\
+  0
+\end{bmatrix}
+$$
+
 
 $$
 H_{2}^{1} =
@@ -375,7 +459,49 @@ $$
 
 <br>
 
-  - Lastly, to obtain $H_{3}^{2}$, concatenate the rotation matrix $r_{3}^{2}$ and the position vector $p_{3}^{2}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+  - Lastly, to obtain $H_{3}^{2}$, concatenate the rotation matrix $R_{3}^{2}$ and the position vector $P_{3}^{2}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+
+$$
+R_{3}^{2} = 
+\begin{bmatrix}
+  1 & 0 & 0
+  \\
+  0 & 1 & 0
+  \\
+  0 & 0 & 1 \\
+\end{bmatrix}
+\times
+\begin{bmatrix}
+  1 & 0 & 1
+  \\
+  0 & 1 & 0
+  \\
+  0 & 0 & 1
+\end{bmatrix}
+$$
+
+$$
+R_{3}^{2}= 
+\begin{bmatrix}
+  1 & 0 & 1
+  \\
+  0 & 1 & 0
+  \\
+  0 & 0 & 1
+\end{bmatrix}
+$$
+
+$$
+P_{3}^{2}= 
+\begin{bmatrix}
+  0
+  \\
+  0
+  \\
+  a_{2}+a_{3}+d_{3}
+\end{bmatrix}
+$$
+              
 
 $$
 H_{3}^{2} =
