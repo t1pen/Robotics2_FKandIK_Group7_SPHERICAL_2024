@@ -139,7 +139,7 @@ ___
 
 
 
-## IV. Kinematic Diagram and D-H Frame Assignments
+## IV. Kinematic Diagram and D-H Frame Assignment
   <p align="center">
   <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
   </div>
@@ -215,12 +215,12 @@ ___
 <br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Following the rules for assigning D-H Frames, we obtained the kinematic diagram with D-H frame assignments shown at the illustration above. First is that the z-axis must be the axis of rotation for a revolute/twisting joint or the direction of translation for a prismatic joint. As observed in the illustration above, all of the blue arrows, which are the z-axis, point in the direction of the axis of rotation for the two revolute joints and the direction of translation for the single prismatic joint. The next rule is the x axis must be perpendicular both to its own z-axis, and the z-axis of the frame before it hence it is seen in the illustration that all the red arrows, an indicator for the x-axis, are all perpendicular to its own z-axis as well as to the z-axis of theframe prior to it. The next rule states that the x axis must be perpendicular to both its own z-axis and the z-axis of the frame preceding it. As can be seen in the illustration, all of the red arrows, which indicate the x-axis, are perpendicular to both its own z-axis and the z-axis of the frame prior to it. The third rule states that each axis must intersect the z-axis of the frame that preceded it. And the rules for complying with this rule are to rotate or translate the axis until it hits the other. Hence, the frame for the prismatic joint were translated into the joint before it so that it will comply with the third rule. The last rule of the D-H frame assignment is that all the frames must follow the right-hand rule. Thus, all the green arrows which indicate the y-axis are drawn with the right-hand rule in mind.
+Following the rules for assigning D-H Frames, we obtained the kinematic diagram with D-H frame assignments shown at the illustration above. First is that the z-axis must be the axis of rotation for a revolute/twisting joint or the direction of translation for a prismatic joint. As observed in the illustration above, all of the blue arrows, which are the z-axis, point in the direction of the axis of rotation for the two revolute joints and the direction of translation for the single prismatic joint. The next rule is the x axis must be perpendicular both to its own z-axis, and the z-axis of the frame before it hence it is seen in the illustration that all the red arrows, an indicator for the x-axis, are all perpendicular to its own z-axis as well as to the z-axis of the frame prior to it. The next rule states that the x axis must be perpendicular to both its own z-axis and the z-axis of the frame preceding it. As can be seen in the illustration, all of the red arrows, which indicate the x-axis, are perpendicular to both its own z-axis and the z-axis of the frame prior to it. The third rule states that each axis must intersect the z-axis of the frame that preceded it. And the rules for complying with this rule are to rotate or translate the axis until it hits the other. Hence, the frame for the prismatic joint were translated into the joint before it so that it will comply with the third rule. The last rule of the D-H frame assignment is that all the frames must follow the right-hand rule. Thus, all the green arrows which indicate the y-axis are drawn with the right-hand rule in mind.
 </p>
 <br>
 
 
-### Kinematic Diagram and D-H Frame of a Spherical Manipulator Video Tutorial 
+### Kinematic Diagram and D-H Frame Assignment of a Spherical Manipulator Video Tutorial 
 
 [![Kinematic Diagram Vid](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157614915/663645cb-1c74-4885-adbb-916cdb70ea0a)](https://youtu.be/zZ7G4kbAt04?si=Fj-rtLJrEH_eJqRP)
 
